@@ -1,13 +1,16 @@
 
-
+.header__nav{
+    position: fixed;
+    width: 100%;
+}
 .header__primary_logo{
     display: block;
-    height: 100px;
-    width: 100px;
-    background-image: url('/img/miconred.svg');
+    height: 125px;
+    width: 125px;
+    background-image: url('/img/greym.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 5px;
+    margin-left: .5em;
 };
 .header__nav, .header__nav_list{
     display: flex;
@@ -22,9 +25,16 @@
     margin-right: 2em;
 
 
-    li{
-        padding: 0 .25em;
-        color: #fff;
+    .header__nav_listitem{
 
+        padding: 0 .25em .5em 0;
+        margin: 0 10px;
+        color: #fff;
+        &:hover{
+            border-bottom: 1px solid #fff;
+        }
+        a{
+            color: #fff;
+        }
     }
 }
