@@ -1,0 +1,32 @@
+.header__primary_text{
+    color: $lightblue;
+}
+
+.header__primary_logo{
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-image: url('/img/miconred.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+};
+.header__nav, .header__nav_list{
+    display: flex;
+    flex-direction: row;
+    font-family: $fredoka;
+    justify-content: space-between;
+    align-items: center;
+};
+.header__nav_list{
+
+    font-size: 1.25em;
+    margin-right: 3%;
+
+
+    li{
+        padding: 0 .25em;
+        color: $lightred;
+
+    }
+}
