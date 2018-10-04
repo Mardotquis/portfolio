@@ -1,6 +1,4 @@
-.header__primary_text{
-    color: $lightblue;
-}
+
 
 .header__primary_logo{
     display: block;
@@ -9,24 +7,24 @@
     background-image: url('/img/miconred.svg');
     background-size: cover;
     background-repeat: no-repeat;
-
+    margin-left: 5px;
 };
 .header__nav, .header__nav_list{
     display: flex;
     flex-direction: row;
-    font-family: $fredoka;
+    font-family: $roboto;
     justify-content: space-between;
     align-items: center;
 };
 .header__nav_list{
 
     font-size: 1.25em;
-    margin-right: 3%;
+    margin-right: 2em;
 
 
     li{
         padding: 0 .25em;
-        color: $lightred;
+        color: #fff;
 
     }
 }

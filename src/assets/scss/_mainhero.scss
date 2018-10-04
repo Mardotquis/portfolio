@@ -1,0 +1,32 @@
+.mainhero{
+    height: 100vh;
+    // border: 10px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main_primary_text, .main_secondary_text{
+    display: block;
+}
+
+.main_primary_text{
+
+    font-size: 5em;
+    top: 43%; right: 50%;
+    // padding: 3em;
+}
+
+.main_secondary_text{
+    font-size: 2.5em;
+    top: 53%; right: 50%;
+    padding: 2em;
+}
+
+.main_open-brace{
+    margin-right: 15px;
+
+}
+.main_close-brace{
+    margin-left: 15px;
+}
