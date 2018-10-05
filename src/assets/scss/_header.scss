@@ -2,7 +2,8 @@
 .header__nav{
     position: fixed;
     width: 100%;
-}
+    background-color: $brightred;
+};
 .header__primary_logo{
     display: block;
     height: 125px;
@@ -20,13 +21,9 @@
     align-items: center;
 };
 .header__nav_list{
-
     font-size: 1.25em;
     margin-right: 2em;
-
-
     .header__nav_listitem{
-
         padding: 0 .25em .5em 0;
         margin: 0 10px;
         color: #fff;
