@@ -39,8 +39,27 @@ const backgroundIcons = [
 
 ];
 
-const projectInformation = {
-
-}
+const projectInformation = [
+    {
+        "projectName": "DuragsRUs",
+        "projectDescription": "",
+        "projectImgPath": "/img/ecommerce.png"
+    },
+    {
+        "projectName": "DuragsRUs",
+        "projectDescription": "",
+        "projectImgPath": "/img/ecommerce.png"
+    },
+    {
+        "projectName": "DuragsRUs",
+        "projectDescription": "",
+        "projectImgPath": "/img/ecommerce.png"
+    },
+    {
+        "projectName": "DuragsRUs",
+        "projectDescription": "",
+        "projectImgPath": "/img/ecommerce.png"
+    },
+]
 
 module.exports = { backgroundIcons, projectInformation }

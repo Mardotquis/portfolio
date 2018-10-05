@@ -4,7 +4,8 @@ import TechIcons from './TechIcons';
 
 
 const Projects = (props) => {
-    const { backgroundIcons } = props;
+
+    const { backgroundIcons, projectInformation } = props;
     return (
         <section id="projects">
             <h2 className="section__header__primary">Projects</h2>
@@ -21,9 +22,17 @@ const Projects = (props) => {
                     })}
                 </div>
             </div>
-            <ProjectsCard />
-            <ProjectsCard />
-            <ProjectsCard />
+            <div>
+                {projectInformation.map(info => {
+                    return (
+                        <ProjectsCard
+                            projectName={info.projectName}
+                            projectDescription={info.projectDescription}
+                            projectImgPath={info.projectImgPath}
+                        />
+                    )
+                })}
+            </div>
         </section>
     );
 };
