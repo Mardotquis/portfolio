@@ -2,13 +2,11 @@ import React from 'react';
 
 const ProjectsCard = (props) => {
     const { projectName, projectDescription, projectImgPath } = props;
+    const grabPath = { backgroundImage: `url(${projectImgPath})` };
     return (
-        <div className="projects__card">
-            <div className="card__left-section">
-                <div className="project--background"></div>
-            </div>
-            <div className="card__right-section">
-                <h3>{projectName}</h3>
+        <div className="projects__card" style={grabPath}>
+            <div className="project_card_information">
+                <h3 className="project__name">{projectName}</h3>
             </div>
         </div>
     )

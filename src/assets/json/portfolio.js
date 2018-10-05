@@ -21,10 +21,6 @@ const backgroundIcons = [
         "iconCaption": "React.js"
     },
     {
-        "iconPath": "/img/icons/git.svg",
-        "iconCaption": "Git/GitHub"
-    },
-    {
         "iconPath": "/img/icons/nodejs.svg",
         "iconCaption": "Node.js"
     },
@@ -36,6 +32,10 @@ const backgroundIcons = [
         "iconPath": "/img/icons/mysql.svg",
         "iconCaption": "MySQL"
     },
+    {
+        "iconPath": "/img/icons/git.svg",
+        "iconCaption": "Git/GitHub"
+    }
 
 ];
 
@@ -46,20 +46,15 @@ const projectInformation = [
         "projectImgPath": "/img/ecommerce.png"
     },
     {
-        "projectName": "DuragsRUs",
+        "projectName": "MyMove",
         "projectDescription": "",
-        "projectImgPath": "/img/ecommerce.png"
+        "projectImgPath": "/img/mymove.png"
     },
     {
-        "projectName": "DuragsRUs",
+        "projectName": "Guessing Game",
         "projectDescription": "",
-        "projectImgPath": "/img/ecommerce.png"
-    },
-    {
-        "projectName": "DuragsRUs",
-        "projectDescription": "",
-        "projectImgPath": "/img/ecommerce.png"
-    },
+        "projectImgPath": "/img/guessinggame.png"
+    }
 ]
 
 module.exports = { backgroundIcons, projectInformation }
