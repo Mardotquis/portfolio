@@ -8,11 +8,3 @@ body{
     text-transform: uppercase;
     margin-bottom: 1em;
 };
-h2:nth-of-type(odd){
-    text-align: left;
-    margin-left: 1em;
-}
-h2:nth-of-type(even){
-    text-align: right;
-    margin-right: 1em;
-}

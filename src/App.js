@@ -4,22 +4,24 @@ import "./App.scss";
 import Header from './components/Header/Header';
 import MainHeader from './components/MainHero/MainHero';
 import AboutMe from './components/AboutMe/AboutMe';
-class App extends Component {
-  render() {
-    document.querySelectorAll('a[href="#aboutme"]').forEach(anchor => {
-      anchor.addEventListener('click', (e) => {
-        e.preventDefault();
+import Projects from "./components/Projects/Projects";
+import { backgroundIcons, projectInformation } from "./assets/json/portfolio";
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      backgroundIcons,
+      projectInformation
+    }
+  }
+  render() {
     return (
       <div>
         <Header />
         <MainHeader />
         <AboutMe />
+        <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} />
       </div>
     );
   }

@@ -1,0 +1,28 @@
+#projects{
+    h2{
+        text-align: right;
+    margin-right: 1em;
+    };
+};
+.projects__card{
+height: 300px;
+
+};
+.tech__icon-wrapper{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+align-content: center;
+};
+.tech__icons{
+    // border: 3px solid yellow;
+    margin: .75em  4em;
+    text-align: center;
+    font-size: 1.15em;
+    font-style: italic;
+}
+.tech__icons-background{
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+}

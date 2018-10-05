@@ -11,7 +11,7 @@
     background-image: url('/img/greym.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: .5em;
+    margin-left: 1em;
 };
 .header__nav, .header__nav_list{
     display: flex;
@@ -22,7 +22,7 @@
 };
 .header__nav_list{
     font-size: 1.25em;
-    margin-right: 2em;
+    margin-right: 1em;
     .header__nav_listitem{
         padding: 0 .25em .5em 0;
         margin: 0 10px;

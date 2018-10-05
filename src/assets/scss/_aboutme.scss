@@ -1,5 +1,9 @@
 #aboutme{
-    height: 100vh;
+
+    h2{
+    text-align: left;
+    margin-left: 1em;
+    }
 
 }
 .aboutme_content{
@@ -7,22 +11,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: column;
-}
-// .aboutme_left-section, .aboutme_right-section{
-//     height: 70vh;
-//     max-width: 40vw;
-//     width: 40%;
-
-// }
-.aboutme_left-section{
-border: 1px solid blue;
-
-
-};
-.aboutme_right-section{
-    // border: 1px solid yellow;
-
-
 };
 .about_picture_figure{
     display: flex;
