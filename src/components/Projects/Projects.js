@@ -9,7 +9,7 @@ const Projects = (props) => {
         <section id="projects">
             <h2 className="section__header__primary">Projects</h2>
             <div>
-                <h3>What I've Learned</h3>
+                <h3 className="projects__header__secondary">What I've Learned</h3>
                 <div className="tech__icon-wrapper">
                     {backgroundIcons.map(icon => {
                         return (

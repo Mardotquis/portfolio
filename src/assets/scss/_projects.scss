@@ -5,9 +5,37 @@
     };
 };
 .projects__card{
-height: 300px;
+height: 500px;
+// padding-top: 5em;
+// background-color: purple;
+border: yellow 5px solid;
+// margin: 2em;
+overflow: hidden;
+display: flex;
+margin: 3em;
 
 };
+.card__left-section{
+height: 100%;
+
+width: 50%;
+background-color: red;
+};
+.card__right-section{
+height: 100%;
+width: 50%;
+    // border: 3px solid green;
+    background-color: green;
+    border-left: 200px solid red;
+    border-bottom: 900px solid transparent;
+
+};
+.projects__header__secondary{
+    font-size: 2em;
+    margin-left: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
 .tech__icon-wrapper{
 display: flex;
 justify-content: space-around;
@@ -25,4 +53,5 @@ align-content: center;
     height: 150px;
     width: 150px;
     background-size: cover;
+    margin-bottom: .25em;
 }
