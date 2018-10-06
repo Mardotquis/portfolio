@@ -26,7 +26,7 @@
     display: block;
 };
 .aboutme__paragraph{
-    margin-top: 1.5em;
+    // margin-top: 1.5em;
 padding: 2em;
     font-size: 1.25em;
     letter-spacing: 2px;
@@ -42,4 +42,8 @@ padding: 2em;
         font-style: italic;
         font-weight: .25em;
     }
+}
+.bottom{
+    margin-top: none;
+padding: 0 2em 2em 2em;
 }

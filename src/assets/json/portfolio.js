@@ -42,17 +42,17 @@ const backgroundIcons = [
 const projectInformation = [
     {
         "projectName": "DuragsRUs",
-        "projectDescription": "",
+        "projectDescription": "Ecommerce project featuring React, MySQL, and Auth-0. Also practiced with MongoDB in earlier version.",
         "projectImgPath": "/img/ecommerce.png"
     },
     {
         "projectName": "MyMove",
-        "projectDescription": "",
+        "projectDescription": "Midterm project build from a Sketch file provided by RoadToHire.",
         "projectImgPath": "/img/mymove.png"
     },
     {
         "projectName": "Guessing Game",
-        "projectDescription": "",
+        "projectDescription": "First game built using React! ",
         "projectImgPath": "/img/guessinggame.png"
     }
 ]

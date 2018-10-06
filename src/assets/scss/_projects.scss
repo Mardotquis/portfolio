@@ -6,19 +6,23 @@
 };
 .projects__card{
     position: relative;
+
 height: 450px;
 margin: 3em;
 overflow: hidden;
 border-radius: 5px;
 background-size: cover;
 background-repeat: no-repeat;
-
 background-attachment: fixed;
 // background-position-y: 10em;
 
 
 };
 .project_card_information{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
     z-index: -5;
     position: absolute;
 background-color: $darkred;
@@ -28,12 +32,42 @@ opacity: .8;
 width: 50%;
 height: 100%;
 z-index: 5;
+
 // transform: skew(30deg);
 .project__name{
     font-size: 3em;
     text-align: center;
-font-weight: normal;
-}
+};
+.project__description{
+    font-size: 1.5em;
+    text-align: center;
+    padding: .5em;
+};
+.project__icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    .github__icon, .website__icon{
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        z-index: 5;
+        display: block;
+        margin: auto;
+    }
+    .github__icon{
+        background-image: url('/img/github.svg');
+    };
+    .website__icon{
+    background-image: url('/img/website.svg')
+    };
+    .project__icons-wrapper{
+        padding: 0 2em 2em 2em;
+    };
+    .project__icon-text{
+        font-weight: bold;
+    }
+};
 
 };
 .projects__header__secondary{
@@ -49,8 +83,9 @@ flex-wrap: wrap;
 align-content: center;
 };
 .tech__icons{
-    // border: 3px solid yellow;
-    margin: .75em  4em;
+    margin: 2em  4em;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-size: 1.15em;
     font-style: italic;

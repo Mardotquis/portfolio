@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import MainHeader from './components/MainHero/MainHero';
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 import { backgroundIcons, projectInformation } from "./assets/json/portfolio";
 
 class App extends Component {
@@ -20,8 +21,10 @@ class App extends Component {
       <div>
         <Header />
         <MainHeader />
-        <AboutMe />
         <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} />
+        <AboutMe />
+        <Contact />
+
       </div>
     );
   }
