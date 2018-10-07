@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
 
     const submitForm = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         const firstName = document.querySelector('#firstName').value
             , lastName = document.querySelector('#lastName').value
             , phoneNumber = document.querySelector('#phoneNumber').value
@@ -19,7 +19,8 @@ const Contact = () => {
             .then(response => response.json())
             // .then(data => console.log(data))
             .then(response => console.log(response))
-            .catch(e => console.log(e))
+            .catch(e => console.log(e));
+        // window.location.reload();
 
     };
     return (
