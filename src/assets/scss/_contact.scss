@@ -1,5 +1,67 @@
 #contact{
-    h1{
+    height: 50vh;
+    h2{
         margin-left: 1em;
     }
+
+}
+.contact__main-content{
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+    padding: 1em;
+    padding-top: 0;
+}
+.contact__information{
+    display: flex;
+    // width: 40%;
+    // flex-direction: column;
+
+    .contact__header__secondary{
+        font-size: 2em;
+        // align-self: flex-start;
+    }
+
+}
+.contact__myEmail{
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+
+    .contactInputField{
+        // width: 50%;
+        margin: 1em 0;
+        padding: .5em;
+        border: none;
+        background-color: transparent;
+        border-bottom: 3px solid #fff;
+border-radius: 5px;
+    }
+    .contactSubmitButton{
+        width: 200px;
+        margin:  auto;
+        background-color: $darkred;
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .contact__form-names{
+        display: flex;
+        justify-content: space-around;
+    }
+    label{
+        display: none;
+    }
+
+    ::placeholder, input{
+        color: #fff;
+        text-align: center;
+    }
+
 }
