@@ -29,6 +29,9 @@ const Projects = (props) => {
                             projectName={info.projectName}
                             projectDescription={info.projectDescription}
                             projectImgPath={info.projectImgPath}
+                            githubLink={info.githubLink}
+                            websiteLink={info.websiteLink}
+
                         />
                     )
                 })}

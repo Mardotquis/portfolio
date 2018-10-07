@@ -43,17 +43,23 @@ const projectInformation = [
     {
         "projectName": "DuragsRUs",
         "projectDescription": "Ecommerce project featuring React, MySQL, and Auth-0. Also practiced with MongoDB in earlier version.",
-        "projectImgPath": "/img/ecommerce.png"
+        "projectImgPath": "/img/ecommerce.png",
+        "githubLink": "https://github.com/Mardotquis/DuragsRUs",
+        "websiteLink": "https://github.com/Mardotquis/DuragsRUs"
     },
     {
         "projectName": "MyMove",
         "projectDescription": "Midterm project build from a Sketch file provided by RoadToHire.",
-        "projectImgPath": "/img/mymove.png"
+        "projectImgPath": "/img/mymove.png",
+        "githubLink": "https://github.com/Mardotquis/MyMove-Project",
+        "websiteLink": "https://mardotquis.github.io/MyMove-Project/"
     },
     {
         "projectName": "Guessing Game",
         "projectDescription": "First game built using React! ",
-        "projectImgPath": "/img/guessinggame.png"
+        "projectImgPath": "/img/guessinggame.png",
+        "githubLink": "https://github.com/Mardotquis/guessing_game",
+        "websiteLink": "https://mardotquis.github.io/guessing_game/"
     }
 ]
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProjectsCard = (props) => {
-    const { projectName, projectDescription, projectImgPath } = props;
+    const { projectName, projectDescription, projectImgPath, githubLink, websiteLink } = props;
     const grabPath = { backgroundImage: `url(${projectImgPath})` };
     return (
         <div className="projects__card" style={grabPath}>
@@ -10,11 +10,11 @@ const ProjectsCard = (props) => {
                 <p className="project__description">{projectDescription}</p>
                 <div className="project__icons">
                     <div className="project__icons-wrapper">
-                        <a href="" className="github__icon"></a>
+                        <a href={`${githubLink}`} className="github__icon"></a>
                         <p className="project__icon-text">Visit GitHub </p>
                     </div>
                     <div className="project__icons-wrapper">
-                        <a href="" className="website__icon"></a>
+                        <a href={`${websiteLink}`} className="website__icon"></a>
                         <p className="project__icon-text">Visit Website</p>
                     </div>
                 </div>
