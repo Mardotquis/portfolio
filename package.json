@@ -2,7 +2,7 @@
   "name": "marquis_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mardotquis.github.io/marquis_portfolio",
+  "homepage": "http://mardotquis.github.io",
   "dependencies": {
     "node-sass": "^4.9.3",
     "react": "^16.5.2",
@@ -27,8 +27,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "img-loader": "^3.0.0",
-    "url-loader": "^1.1.1"
+    "gh-pages": "^2.0.1"
   }
 }
