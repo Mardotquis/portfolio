@@ -27,7 +27,7 @@ const Contact = () => {
             <h2 className="section__header__primary">Contact Me</h2>
             <div className="contact__main-content">
 
-                <p>Feel free to <a href="mailto:marquis0403@gmail.com" className="contact__span-email">email</a> me or fill out this form and I will get back to you as soon as possible!</p>
+                <p className="contact__text_primary">Feel free to <a href="mailto:marquis0403@gmail.com" className="contact__span-email">email</a> me or fill out this form and I will get back to you as soon as possible!</p>
                 {/* <a href="mailto:marquis0403@gmail.com" className="contact__myEmail">Marquis0403@gmail.com</a> */}
 
 

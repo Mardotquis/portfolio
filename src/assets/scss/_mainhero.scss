@@ -5,6 +5,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-width: $mainheroBreakpoint){
+        height: 70vh;
+        .main_primary_text{
+            font-size: 3em;
+        }
+        .main_secondary_text{
+            font-size: 1.5em;
+        }
+    }
+    @media (max-width: $mainheroBreakpointSmall) {
+
+        .main_primary_text{
+            font-size: 1.5em;
+        }
+        .main_secondary_text{
+            font-size: 1em;
+        }
+    }
 }
 .main_primary_text, .main_secondary_text{
     display: block;
@@ -14,6 +32,7 @@
     font-size: 5em;
     font-weight: 900;
     top: 43%; right: 50%;
+
 }
 
 .main_secondary_text{

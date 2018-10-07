@@ -2,12 +2,21 @@ body{
     font-family: $roboto;
     color: #fff;
     background-color: $brightred;
+
 }
 .section__header__primary{
     font-size: 3.5em;
     text-transform: uppercase;
     margin-bottom: 1em;
+    @media (max-width: $mainheroBreakpoint){
+        font-size: 2em;
+        text-align: center !important;
+      margin: 1em 0 !important;
+    }
+    @media (max-width: $mainheroBreakpointSmall){
+        font-size: 1.5em;
+    }
 };
 h2{
-    padding-top: 2em;
+    padding-top: 120px;
 }
