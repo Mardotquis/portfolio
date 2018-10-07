@@ -2,8 +2,8 @@ import React from 'react';
 
 const Contact = () => {
 
-    const submitForm = () => {
-        // e.preventDefault();
+    const submitForm = (e) => {
+        e.preventDefault();
         const firstName = document.querySelector('#firstName').value
             , lastName = document.querySelector('#lastName').value
             , phoneNumber = document.querySelector('#phoneNumber').value
