@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
 
     const submitForm = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         const firstName = document.querySelector('#firstName').value
             , lastName = document.querySelector('#lastName').value
             , phoneNumber = document.querySelector('#phoneNumber').value
@@ -27,8 +27,9 @@ const Contact = () => {
             <h2 className="section__header__primary">Contact Me</h2>
             <div className="contact__main-content">
 
+                <p>Feel free to <a href="mailto:marquis0403@gmail.com" className="contact__span-email">email</a> me or fill out this form and I will get back to you as soon as possible!</p>
+                {/* <a href="mailto:marquis0403@gmail.com" className="contact__myEmail">Marquis0403@gmail.com</a> */}
 
-                <a href="mailto:marquis0403@gmail.com" className="contact__myEmail">Marquis0403@gmail.com</a>
 
                 <form onSubmit={submitForm} className="contact__form" required >
                     <div className="contact__form-names">

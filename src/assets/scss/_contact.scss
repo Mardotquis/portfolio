@@ -25,28 +25,38 @@ align-items: center;
     }
 
 }
-.contact__myEmail{
+.contact__span-email{
     font-size: 1.25em;
-    text-transform: uppercase;
+    color: #eee;
+    padding: .25em;
+    &:hover{
+        border: 1px solid #fff;
+    }
 }
 
 .contact__form{
     display: flex;
     flex-direction: column;
     width: 65%;
+    padding: 2em 0;
 
     .contactInputField{
         // width: 50%;
         margin: 1em 0;
-        padding: .5em;
+        padding: 1.5em 0;
         border: none;
         background-color: transparent;
         border-bottom: 3px solid #fff;
 border-radius: 5px;
+@media (max-width: 1000px){
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
     }
     .contactSubmitButton{
         width: 200px;
-        margin:  auto;
+        margin:  2em auto;
         background-color: $darkred;
         padding: 1em;
         border-radius: 5px;
@@ -54,6 +64,10 @@ border-radius: 5px;
     .contact__form-names{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
+        @media (max-width: 1000px){
+            display: block;
+        }
     }
     label{
         display: none;
@@ -62,6 +76,11 @@ border-radius: 5px;
     ::placeholder, input{
         color: #fff;
         text-align: center;
+    }
+    textarea{
+        resize: none;
+        height: 100px;
+        color: #fff;
     }
 
 }
