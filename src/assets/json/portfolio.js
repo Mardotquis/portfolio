@@ -49,7 +49,7 @@ const projectInformation = [
     },
     {
         "projectName": "MyMove",
-        "projectDescription": "Midterm project build from a Sketch file provided by RoadToHire.",
+        "projectDescription": "Midterm project built from a Sketch file provided by RoadToHire.",
         "projectImgPath": "/img/mymove.png",
         "githubLink": "https://github.com/Mardotquis/MyMove-Project",
         "websiteLink": "https://mardotquis.github.io/MyMove-Project/"
