@@ -2,7 +2,7 @@
   "name": "marquis_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mardotquis.github.io",
+  "homepage": "http://mardotquis.github.io/portfolio",
   "dependencies": {
     "animate.css": "^3.7.0",
     "node-sass": "^4.9.3",
