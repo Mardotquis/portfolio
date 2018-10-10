@@ -19,6 +19,10 @@ const MainHero = (props) => {
                     )
                 })}
             </ul>
+            <div className="main--downarrow_container">
+                <a className="main--downarrow" href="#aboutme"/>
+                <p className="main--downarrow_text">See More</p>
+            </div>
         </div>
     )
 };
