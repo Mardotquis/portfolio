@@ -10,8 +10,8 @@ body{
     @media (max-width: $mainheroBreakpoint){
         font-size: 2em;
         text-align: center !important;
-      margin:  5em !important;
-    //   padding-top: 120px;
+      margin:  0em !important;
+      padding-top: 120px;
     }
     @media (max-width: $mainheroBreakpointSmall){
         font-size: 1.5em;

@@ -14,6 +14,10 @@ height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 1em;
+    @media (max-width: $mainheroBreakpoint) {
+        height: 100px;
+        width: 100px;
+    }
 };
 .header__nav, .header__nav_list{
     display: flex;
@@ -23,6 +27,9 @@ height: 120px;
     align-items: center;
 };
 .header__nav_list{
+    @media (max-width: $mainheroBreakpoint) {
+        display: none;
+    }
     font-size: 1.25em;
     margin-right: 1em;
     .header__nav_listitem{
@@ -39,8 +46,33 @@ height: 120px;
 };
 
 .header--menuicon{
-    width: 100px;
-    height: 100px;
+    @media (min-width: $mainheroBreakpoint) {
+        display: none;
+    }
+position: fixed;
+top: 20px;
+right: 20px;
+    width: 60px;
+    height: 60px;
     background-size: cover;
-    background-image: url('/img/menuicon.svg')
+    background-image: url('/img/menuicon.svg');
+    z-index: 2000;
+}
+
+
+
+.header__hiddenMenu{
+position: fixed;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+display: none;
+z-index: 1000;
+height: 100%;
+width: 100vw;
+background-color: $brightred;
+font-size: 3em;
+.header__nav_listitem{
+    padding: .5em 0;
+}
 }
