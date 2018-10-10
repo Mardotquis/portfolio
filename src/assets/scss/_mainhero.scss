@@ -47,3 +47,14 @@
 .main_close-brace{
     margin-left: 15px;
 }
+.mainhero__icon-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainhero__icons{
+    height: 125px;
+    width: 125px;
+    background-color: yellow;
+    padding: .5em;
+    margin: .5em 1.5em;
+}

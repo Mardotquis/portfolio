@@ -6,7 +6,7 @@ const TechIcons = (props) => {
     const grabPath = { backgroundImage: `url(${iconPath})` };
     return (
         <div className="tech__icons">
-            <div className="tech__icons-background" style={grabPath}></div>
+            <div className="tech__icons-background animated bounce " style={grabPath}></div>
             <p>{iconCaption}</p>
         </div>
     )

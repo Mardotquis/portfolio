@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://mardotquis.github.io",
   "dependencies": {
+    "animate.css": "^3.7.0",
     "node-sass": "^4.9.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",

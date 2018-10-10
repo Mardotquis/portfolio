@@ -1,4 +1,19 @@
 
+const mainHeroIcons = [
+    {
+        "iconPath": "/img/",
+        "iconLink": ""
+    },
+    {
+        "iconPath": "",
+        "iconLink": ""
+    },
+    {
+        "iconPath": "",
+        "iconLink": ""
+    }
+];
+
 const backgroundIcons = [
     {
         "iconPath": "/img/icons/html5.svg",
@@ -61,6 +76,6 @@ const projectInformation = [
         "githubLink": "https://github.com/Mardotquis/guessing_game",
         "websiteLink": "https://mardotquis.github.io/guessing_game/"
     }
-]
+];
 
 module.exports = { backgroundIcons, projectInformation }

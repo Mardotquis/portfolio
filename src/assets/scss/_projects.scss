@@ -13,9 +13,6 @@ border-radius: 5px;
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
-// background-position: center;
-// background-position-y: 10em;
-// -webkit-transform: translate3d(0,0,0);//helps ??
 transform:translatez(0);//helps ??
 @media (max-width: $projectsBreakpoint){
     background-attachment: scroll;
@@ -127,6 +124,9 @@ align-items: center;
     width: 150px;
     background-size: cover;
     margin-bottom: .25em;
+    animation: jello 1.5s infinite;
+
+
     @media (max-width: $techIconsBreakpoint){
         height: 75px;
         width: 75px;
