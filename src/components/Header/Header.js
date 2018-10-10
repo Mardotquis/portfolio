@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
     const toggleHiddenMenu=()=>{
         const navMenu = document.querySelector('.header__hiddenMenu');
-        if(navMenu.style.display === "none"){
+        if(navMenu.style.display === "none" || navMenu.style.display === ""){
             navMenu.style.display = "flex";
         }else{
             navMenu.style.display = "none"
