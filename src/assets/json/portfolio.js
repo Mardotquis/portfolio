@@ -1,16 +1,16 @@
 
 const mainHeroIcons = [
     {
-        "iconPath": "/img/",
-        "iconLink": ""
+        "iconPath": "/img/whiteinstagram.svg",
+        "iconLink": "https://www.instagram.com/mar.quis/"
     },
     {
-        "iconPath": "",
-        "iconLink": ""
+        "iconPath": "/img/whitelinkedin.svg",
+        "iconLink": "https://www.linkedin.com/in/marquis-mitchell-9aa5b1167/"
     },
     {
-        "iconPath": "",
-        "iconLink": ""
+        "iconPath": "/img/whitegithub.svg",
+        "iconLink": "https://www.github.com/mardotquis"
     }
 ];
 
@@ -78,4 +78,4 @@ const projectInformation = [
     }
 ];
 
-module.exports = { backgroundIcons, projectInformation }
+module.exports = { backgroundIcons, projectInformation, mainHeroIcons }

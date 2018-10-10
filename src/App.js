@@ -6,21 +6,24 @@ import MainHeader from './components/MainHero/MainHero';
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
-import { backgroundIcons, projectInformation } from "./assets/json/portfolio";
+import { backgroundIcons, projectInformation, mainHeroIcons } from "./assets/json/portfolio";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       backgroundIcons,
-      projectInformation
+      projectInformation,
+      mainHeroIcons
     }
   }
   render() {
+
+    // openInNewTab();
     return (
       <div>
         <Header />
-        <MainHeader />
+        <MainHeader mainHeroIcons={this.state.mainHeroIcons}/>
         <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} />
         <AboutMe />
         <Contact />

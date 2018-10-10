@@ -52,9 +52,10 @@
     flex-wrap: wrap;
 }
 .mainhero__icons{
-    height: 125px;
-    width: 125px;
-    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-image: url('/img/icons/redinstagram.svg');
     padding: .5em;
     margin: .5em 1.5em;
 }

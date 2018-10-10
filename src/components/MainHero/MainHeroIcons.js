@@ -1,8 +1,11 @@
 import React from 'react';
 
-const MainHeroIcons = () => {
+const MainHeroIcons = (props) => {
+
+    const {iconPath, iconLink } = props;
+    const grabPath = { backgroundImage: `url(${iconPath})` };
     return (
-        <a href="" className="mainhero__icons"></a>
+        <a href={iconLink} className="mainhero__icons" style={grabPath} target="_blank"></a>
     )
 };
 

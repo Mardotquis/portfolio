@@ -10,11 +10,11 @@ const ProjectsCard = (props) => {
                 <p className="project__description">{projectDescription}</p>
                 <div className="project__icons">
                     <div className="project__icons-wrapper">
-                        <a href={`${githubLink}`} className="github__icon"></a>
+                        <a href={`${githubLink}`} className="github__icon" target="_blank"></a>
                         <p className="project__icon-text">Visit GitHub </p>
                     </div>
                     <div className="project__icons-wrapper">
-                        <a href={`${websiteLink}`} className="website__icon"></a>
+                        <a href={`${websiteLink}`} className="website__icon" target="_blank"></a>
                         <p className="project__icon-text">Visit Website</p>
                     </div>
                 </div>
