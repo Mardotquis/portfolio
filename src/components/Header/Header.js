@@ -18,8 +18,6 @@ const Header = () => {
                     <li className="header__nav_listitem"><a href="#aboutme">About Me</a></li>
                     <li className="header__nav_listitem"><a href="#contact">Contact</a></li>
                 </ul>
-
-
             </nav>
             <div className="header--menuicon" onClick={toggleHiddenMenu}></div>
             <nav className="header__nav--hidden">
