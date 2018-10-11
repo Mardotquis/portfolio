@@ -18,5 +18,8 @@ body{
     }
 };
 h2{
-    // padding-top: 120px;
+    padding-top: 120px;
+    @media (max-width: $mainheroBreakpointSmall) {
+        padding-top: 0;
+    }
 }
