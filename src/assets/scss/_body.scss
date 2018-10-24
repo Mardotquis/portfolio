@@ -3,6 +3,10 @@ body{
     color: #fff;
     background-color: $brightred;
 }
+
+.header__nav_listitem, .main--downarrow_container, .header__primary_logo{
+    cursor: pointer;
+}
 .section__header__primary{
     font-size: 3.5em;
     text-transform: uppercase;
