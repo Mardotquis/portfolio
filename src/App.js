@@ -17,13 +17,18 @@ class App extends Component {
       mainHeroIcons
     }
   }
+
+   scrollIntoThisDiv = (id) => {
+    const divToScrollInto = document.getElementById(`${id}`);
+    divToScrollInto.scrollIntoView({behavior: "smooth" , block: "start"});
+}
   render() {
 
-    // openInNewTab();
+
     return (
       <div>
-        <Header />
-        <MainHeader mainHeroIcons={this.state.mainHeroIcons}/>
+        <Header scrollIntoThisDiv={this.scrollIntoThisDiv}/>
+        <MainHeader mainHeroIcons={this.state.mainHeroIcons} scrollIntoThisDiv={this.scrollIntoThisDiv}/>
         <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} />
         <AboutMe />
         <Contact />

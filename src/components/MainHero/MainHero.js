@@ -20,8 +20,8 @@ const MainHero = (props) => {
                 })}
             </ul>
             <div className="main--downarrow_container">
-                <a className="main--downarrow" href="#projects"/>
-                <a className="main--downarrow_text" href="#projects">See More</a>
+                <a className="main--downarrow" onClick={()=>props.scrollIntoThisDiv("projects")}/>
+                <a className="main--downarrow_text" onClick={()=>props.scrollIntoThisDiv("projects")}>See More</a>
             </div>
         </div>
     )
