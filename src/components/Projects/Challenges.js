@@ -8,35 +8,32 @@ class Challenges extends Component {
         }
     }
 
-     toggleZoomIn = () => {
+    toggleModal = () =>{
         const modal = this.refs.cardModal
         const card = this.refs.cardBackground;
         const overlay = this.refs.modalOverlay;
-        modal.style.display = "block";
-        card.style.backgroundImage = `url("${this.props.projectImgPath}")`;
-        card.style.display = "block"
-        overlay.style.display = "block";
-    }
 
-     closeModal = () =>{
-        const modal = this.refs.cardModal
-        const card = this.refs.cardBackground;
-        const overlay = this.refs.modalOverlay;
-        modal.style.display =  "none";
-        card.style.display = "none";
-        overlay.style.display = "none";
+        if(modal.style.display === "none" || modal.style.display === ""){
+            card.style.display = "block"
+            modal.classList.toggle('fadeInto')
+            card.classList.toggle('fadeInto')
+            overlay.classList.toggle('modalOverlayOpen')
+            card.style.backgroundImage = `url("${this.props.projectImgPath}")`;
+        }else{
+            modal.classList.toggle('fadeOut')
+            card.classList.toggle('fadeOut')
+            overlay.classList.toggle('fadeOut')
+        }
     }
     render() {
         const { projectName, projectDescription, projectImgPath } = this.props;
         const grabPath = { backgroundImage: `url("${projectImgPath}")` }
 
-
-
         return (
 
             <div className="challenges__card">
-                <div className="challenges__card-modal-overlay" ref="modalOverlay" onClick={this.closeModal}></div>
-                <div className="challenges__card-background" style={grabPath} onClick={this.toggleZoomIn}></div>
+                <div className="challenges__card-modal-overlay" ref="modalOverlay" onClick={this.toggleModal}></div>
+                <div className="challenges__card-background" style={grabPath} onClick={this.toggleModal}></div>
                 <div className="challenges__card-modal" ref="cardModal">
                     <div className="challenges__card-modal-background" ref="cardBackground"></div>
                 </div>
