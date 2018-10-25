@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectsCard from "./ProjectsCard";
 import TechIcons from './TechIcons';
-import Chalenges from "./Challenges";
+import Challenges from "./Challenges";
 
 
 
@@ -42,7 +42,7 @@ const Projects = (props) => {
             <div className="challenges">
             {challenges.map(info=>{
                 return(
-                    <Chalenges
+                    <Challenges
                     projectName={info.projectName}
                     projectDescription={info.projectDescription}
                     projectImgPath={info.projectImgPath}

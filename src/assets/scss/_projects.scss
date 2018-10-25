@@ -152,6 +152,38 @@ align-items: center;
             border-radius: 10px;
             position: relative;
             overflow: scroll;
+            &-modal{
+                display: none;
+                position: fixed;
+                top: 10%;
+                width: 750px;
+                height: 600px;
+                position: fixed;
+                left: 50%;
+                transform: translate(-50%, 0);
+                z-index: 210;
+                background-size: cover;
+                overflow: scroll;
+                &-background{
+                    height: 1200px;
+                    width: 750px;
+                    // background-image: url('/img/ajaxapicarbon.png');
+                background-size: cover;
+                z-index: 210;
+                }
+                &-overlay{
+                    position: fixed;
+                    display: none;
+                    top: 0px;
+                    left: 0px;
+                    height: 5000px;
+                    width: 5000px;
+                    background-color: #000;
+                    opacity: .7;
+                    z-index: 209;
+                    // display: block;
+                }
+            }
             &-background{
                 position: absolute;
                 // background-image: url('/img/ajaxapicarbon.png');
@@ -168,6 +200,7 @@ align-items: center;
                 &:hover{
                     animation: 500ms fadeInto ease-in;
                     animation-fill-mode: forwards;
+                    cursor: zoom-in
                 }
             }
 
@@ -185,7 +218,7 @@ align-items: center;
                 &__header_primary{
                     font-size: 2em;
                     text-align: center;
-                    z-index: 200;
+                    z-index: 100;
                     color: $darkred;
 
                 }
@@ -198,6 +231,7 @@ align-items: center;
                     }
                 }
         }
+
 }
 
 @keyframes fadeOut{
