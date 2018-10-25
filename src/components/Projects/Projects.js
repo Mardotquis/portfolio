@@ -1,6 +1,8 @@
 import React from 'react';
 import ProjectsCard from "./ProjectsCard";
 import TechIcons from './TechIcons';
+import Chalenges from "./Challenges";
+
 
 
 const Projects = (props) => {
@@ -35,6 +37,13 @@ const Projects = (props) => {
                         />
                     )
                 })}
+            </div>
+            <h3 className="challenges__header_primary">Extra Challenges</h3>
+            <div className="challenges">
+
+                <Chalenges />
+                <Chalenges />
+                <Chalenges />
             </div>
         </section>
     );
