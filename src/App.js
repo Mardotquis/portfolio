@@ -6,7 +6,7 @@ import MainHeader from './components/MainHero/MainHero';
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
-import { backgroundIcons, projectInformation, mainHeroIcons } from "./assets/json/portfolio";
+import { backgroundIcons, projectInformation, mainHeroIcons, challenges } from "./assets/json/portfolio";
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +14,8 @@ class App extends Component {
     this.state = {
       backgroundIcons,
       projectInformation,
-      mainHeroIcons
+      mainHeroIcons,
+      challenges
     }
   }
 
@@ -29,7 +30,7 @@ class App extends Component {
       <div>
         <Header scrollIntoThisDiv={this.scrollIntoThisDiv}/>
         <MainHeader mainHeroIcons={this.state.mainHeroIcons} scrollIntoThisDiv={this.scrollIntoThisDiv}/>
-        <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} />
+        <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} challenges={this.state.challenges} />
         <AboutMe />
         <Contact />
 

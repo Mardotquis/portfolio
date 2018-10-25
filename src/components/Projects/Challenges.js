@@ -8,17 +8,16 @@ class Challenges extends Component {
         }
     }
     render() {
+        const { projectName, projectDescription, projectImgPath } = this.props;
+
+        const grabPath = { backgroundImage : `url("${projectImgPath}")`}
         return (
 
             <div className="challenges__card">
-                <div className="challenges__card-background"></div>
+                <div className="challenges__card-background" style={grabPath}></div>
                 <div className="challenges__card-hidden">
-                <h3 className="challenges__card__header_primary">Test Title</h3>
-                    <p className="challenges__card__text_primary">Sint consequat ipsum ipsum ut consectetur ad aliqua magna aute velit. Officia anim irure ea minim anim. Sit cupidatat officia cillum nulla nulla fugiat exercitation. Laboris nisi commodo qui aliqua nisi excepteur ipsum eiusmod incididunt ex sunt dolor commodo.</p>
-                    <div>
-                        <button></button>
-                        <button></button>
-                    </div>
+                <h3 className="challenges__card__header_primary">{projectName}</h3>
+                    <p className="challenges__card__text_primary">{projectDescription}</p>
                 </div>
             </div>
         )

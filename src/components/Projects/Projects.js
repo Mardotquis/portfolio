@@ -7,7 +7,7 @@ import Chalenges from "./Challenges";
 
 const Projects = (props) => {
 
-    const { backgroundIcons, projectInformation } = props;
+    const { backgroundIcons, projectInformation, challenges  } = props;
     return (
         <section id="projects">
             <h2 className="section__header__primary">Projects</h2>
@@ -40,10 +40,15 @@ const Projects = (props) => {
             </div>
             <h3 className="challenges__header_primary">Extra Challenges</h3>
             <div className="challenges">
-
-                <Chalenges />
-                <Chalenges />
-                <Chalenges />
+            {challenges.map(info=>{
+                return(
+                    <Chalenges
+                    projectName={info.projectName}
+                    projectDescription={info.projectDescription}
+                    projectImgPath={info.projectImgPath}
+                    />
+                )
+            })}
             </div>
         </section>
     );

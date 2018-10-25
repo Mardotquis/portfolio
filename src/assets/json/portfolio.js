@@ -78,4 +78,20 @@ const projectInformation = [
     }
 ];
 
-module.exports = { backgroundIcons, projectInformation, mainHeroIcons }
+const challenges = [
+        {
+            "projectName": "Node API",
+            "projectDescription": "Add CRUD functionality to a Node API built using Express",
+            "projectImgPath": "/img/nodeapicarbonlong.png",
+
+        },
+        {
+            "projectName": "International Space Station API",
+            "projectDescription": "Connect to an API and use either current location or inputed latitude and longitude to find out when International Space Station will fly over your location.",
+            "projectImgPath": "/img/ajaxapicarbon.png",
+
+        },
+
+]
+
+module.exports = { backgroundIcons, projectInformation, mainHeroIcons, challenges }
