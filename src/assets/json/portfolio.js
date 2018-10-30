@@ -60,7 +60,7 @@ const projectInformation = [
         "projectDescription": "Ecommerce project featuring React, MySQL, and Auth-0. Also practiced with MongoDB in earlier version.",
         "projectImgPath": "/img/ecommerce.png",
         "githubLink": "https://github.com/Mardotquis/DuragsRUs",
-        "websiteLink": "https://github.com/Mardotquis/DuragsRUs"
+        "websiteLink": "https://duragsrus.netlify.com/"
     },
     {
         "projectName": "MyMove",

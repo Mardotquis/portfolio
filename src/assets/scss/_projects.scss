@@ -206,25 +206,25 @@ align-items: center;
             }
 
             &-hidden{
-                background-color: #eee;
+                background-color: #fff;
                 position: absolute;
                 top: 0;
                 height: 100%;
-                width: 100%;
+                width: 500px;
                 opacity: 1;
                 padding: 1em;
                 border-radius: inherit;
 
             }
                 &__header_primary{
-                    font-size: 2em;
+                    font-size: 2.5em;
                     text-align: center;
                     z-index: 100;
                     color: $darkred;
 
                 }
                 &__text_primary{
-                    margin-top: 1.5em;
+                    margin-top: 2em;
                     line-height: 25px;
                     letter-spacing: .5px;
                     &::first-letter{

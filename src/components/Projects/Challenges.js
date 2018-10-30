@@ -27,7 +27,7 @@ class Challenges extends Component {
     }
     render() {
         const { projectName, projectDescription, projectImgPath } = this.props;
-        const grabPath = { backgroundImage: `url("${projectImgPath}")` }
+        const grabPath = { backgroundImage: `url("${projectImgPath}")` };
 
         return (
 
