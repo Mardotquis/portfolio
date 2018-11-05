@@ -11,7 +11,7 @@ const Contact = () => {
             , guestMessage = document.querySelector('#guestMessage').value
             , bodyBeingSent = { firstName, lastName, phoneNumber, guestEmail, guestMessage };
         console.log(bodyBeingSent);
-        fetch("https://marquis-portfolio.herokuapp.com/", {
+        fetch("https://marquisportfolio-221614.appspot.com", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(bodyBeingSent)
