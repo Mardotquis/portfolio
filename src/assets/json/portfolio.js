@@ -63,6 +63,13 @@ const projectInformation = [
         "websiteLink": "https://duragsrus.netlify.com/"
     },
     {
+        "projectName": "Bot-O-Mat",
+        "projectDescription": "Assignment to make robot complete tasks and remove them from the list when they're done!",
+        "projectImgPath": "/img/botomatscreenshot.png",
+        "githubLink": "https://github.com/Mardotquis/bot-o-mat",
+        "websiteLink": "https://botomat.netlify.com"
+    },
+    {
         "projectName": "MyMove",
         "projectDescription": "Midterm project built from a Sketch file provided by RoadToHire.",
         "projectImgPath": "/img/mymove.png",
