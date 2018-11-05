@@ -1,5 +1,6 @@
 #contact{
     height: 50vh;
+    position: relative;
     h2{
         margin-left: 1em;
     }
@@ -77,4 +78,46 @@ outline: none;
         color: #fff;
     }
 
+}
+.fadeOut{
+    animation: 1000ms fadeOut;
+    animation-fill-mode: forwards;
+}
+.fadeIn{
+    animation: 1000ms fadeIn;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+}
+.contact__form_response{
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    font-size: 1.5em;
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 2;
+    opacity: 0;
+    padding: 1em;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
 }

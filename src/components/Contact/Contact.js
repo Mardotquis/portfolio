@@ -10,28 +10,41 @@ const Contact = () => {
             , guestEmail = document.querySelector('#guestEmail').value
             , guestMessage = document.querySelector('#guestMessage').value
             , bodyBeingSent = { firstName, lastName, phoneNumber, guestEmail, guestMessage };
-        console.log(bodyBeingSent);
         fetch("https://marquisportfolio-221614.appspot.com", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(bodyBeingSent)
         })
-            .then(response => response.json())
-            // .then(data => console.log(data))
-            .then(response => console.log(response))
-            .catch(e => console.log(e));
-        // window.location.reload();
-
+            .then(response => {
+                if(response.status === 200){
+                    formResponse(true)
+                }else{
+                    formResponse(false)
+                }
+            })
+            .catch(() => formResponse(false));
     };
+
+    const formResponse = (status) =>{
+        const form = document.querySelector('.contact__form');
+        const message = document.querySelector('.contact__form_response');
+        form.classList.toggle("fadeOut");
+        message.classList.toggle("fadeIn");
+        if(status){
+            message.innerHTML = "Thank you for your response."
+        }
+        else{
+            message.innerHTML = `There was an error submitting your response. Please try again or <a href="mailto:marquis0403@gmail.com" className="contact__span-email">email</a> me!`
+        }
+    }
+
+
+
     return (
         <section id="contact">
             <h2 className="section__header__primary">Contact Me</h2>
             <div className="contact__main-content">
-
                 <p className="contact__text_primary">Feel free to <a href="mailto:marquis0403@gmail.com" className="contact__span-email">email</a> me or fill out this form and I will get back to you as soon as possible!</p>
-                {/* <a href="mailto:marquis0403@gmail.com" className="contact__myEmail">Marquis0403@gmail.com</a> */}
-
-
                 <form onSubmit={submitForm} className="contact__form" required >
                     <div className="contact__form-names">
                         <label htmlFor="firstName">First Name:</label>
@@ -51,6 +64,9 @@ const Contact = () => {
                     <textarea type="text" name="guestMessage" id="guestMessage" className="contactInputField" placeholder="Message" />
                     <input type="submit" className="contactSubmitButton" />
                 </form>
+            </div>
+            <div>
+                <h3 className="contact__form_response"></h3>
             </div>
         </section>
     )
