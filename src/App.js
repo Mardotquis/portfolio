@@ -29,10 +29,12 @@ class App extends Component {
     return (
       <div>
         <Header scrollIntoThisDiv={this.scrollIntoThisDiv}/>
-        <MainHeader mainHeroIcons={this.state.mainHeroIcons} scrollIntoThisDiv={this.scrollIntoThisDiv}/>
-        <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} challenges={this.state.challenges} />
-        <AboutMe />
-        <Contact />
+        <main>
+          <MainHeader mainHeroIcons={this.state.mainHeroIcons} scrollIntoThisDiv={this.scrollIntoThisDiv}/>
+          <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} challenges={this.state.challenges} />
+          <AboutMe />
+          <Contact />
+        </main>
 
       </div>
     );

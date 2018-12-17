@@ -4,6 +4,10 @@ body{
     background-color: $brightred;
 }
 
+main{
+    max-width: 2200px;
+    margin: 0 auto;
+}
 .header__nav_listitem, .main--downarrow_container, .header__primary_logo{
     cursor: pointer;
 }

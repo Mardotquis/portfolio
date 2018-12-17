@@ -1,7 +1,6 @@
 import React from 'react';
 import MainHeroIcons from './MainHeroIcons';
 const MainHero = (props) => {
-    console.log(props.mainHeroIcons)
     return (
         <div className="mainhero" id="home">
             <h1 className="main_primary_text ">Hello, I'm Marquis!</h1>
