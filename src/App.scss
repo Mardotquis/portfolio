@@ -28,3 +28,10 @@
 //OVERALL BODY STYLES
 @import "./assets/scss/body";
 
+body{
+    animation: fadeInPageLoad 2s;
+}
+
+@keyframes fadeInPageLoad {
+    from{opacity: 0;} to{opacity: 1}
+}
