@@ -58,28 +58,28 @@ const projectInformation = [
     {
         "projectName": "DuragsRUs",
         "projectDescription": "Ecommerce project featuring React, MySQL, and Auth-0. Also practiced with MongoDB in earlier version.",
-        "projectImgPath": "/img/ecommerce.png",
+        "projectImgPath": "https://s3.amazonaws.com/marquisportfolio-img/ecommerce.png",
         "githubLink": "https://github.com/Mardotquis/DuragsRUs",
         "websiteLink": "https://duragsrus.netlify.com/"
     },
     {
         "projectName": "Bot-O-Mat",
         "projectDescription": "Assignment to make robot complete tasks and remove them from the list when they're done!",
-        "projectImgPath": "/img/botomatscreenshot.png",
+        "projectImgPath": "https://s3.amazonaws.com/marquisportfolio-img/botomatscreenshot.png",
         "githubLink": "https://github.com/Mardotquis/bot-o-mat",
         "websiteLink": "https://botomat.netlify.com"
     },
     {
         "projectName": "MyMove",
         "projectDescription": "Midterm project built from a Sketch file provided by RoadToHire.",
-        "projectImgPath": "/img/mymove.png",
+        "projectImgPath": "https://s3.amazonaws.com/marquisportfolio-img/mymove.png",
         "githubLink": "https://github.com/Mardotquis/MyMove-Project",
         "websiteLink": "https://mardotquis.github.io/MyMove-Project/"
     },
     {
         "projectName": "Guessing Game",
         "projectDescription": "First game built using React! ",
-        "projectImgPath": "/img/guessinggame.png",
+        "projectImgPath": "https://s3.amazonaws.com/marquisportfolio-img/guessinggame.png",
         "githubLink": "https://github.com/Mardotquis/guessing_game",
         "websiteLink": "https://mardotquis.github.io/guessing_game/"
     }
