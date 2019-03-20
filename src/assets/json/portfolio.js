@@ -50,8 +50,11 @@ const backgroundIcons = [
     {
         "iconPath": "/img/icons/git.svg",
         "iconCaption": "Git/GitHub"
+    },
+    {
+        "iconPath": "/img/icons/aws.svg",
+        "iconCaption": "Amazon Web Services"
     }
-
 ];
 
 const projectInformation = [
@@ -86,18 +89,18 @@ const projectInformation = [
 ];
 
 const challenges = [
-        {
-            "projectName": "Node API",
-            "projectDescription": "Add CRUD functionality to a Node API built using Express",
-            "projectImgPath": "/img/nodeapicarbonlong.png",
+    {
+        "projectName": "Node API",
+        "projectDescription": "Add CRUD functionality to a Node API built using Express",
+        "projectImgPath": "/img/nodeapicarbonlong.png",
 
-        },
-        {
-            "projectName": "International Space Station API",
-            "projectDescription": "Connect to an API and use either current location or inputed latitude and longitude to find out when International Space Station will fly over your location.",
-            "projectImgPath": "/img/ajaxapicarbon.png",
+    },
+    {
+        "projectName": "International Space Station API",
+        "projectDescription": "Connect to an API and use either current location or inputed latitude and longitude to find out when International Space Station will fly over your location.",
+        "projectImgPath": "/img/ajaxapicarbon.png",
 
-        },
+    },
 
 ]
 

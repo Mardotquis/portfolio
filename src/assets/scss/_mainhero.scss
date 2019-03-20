@@ -62,7 +62,10 @@
     background-image: url('/img/icons/redinstagram.svg');
     padding: .5em;
     margin: .5em 1.5em;
-
+    transition: all 500ms;
+    &:hover{
+        opacity: .65;
+    }
 }
 .main--downarrow_container{
     position: absolute;

@@ -39,11 +39,18 @@ height: 120px;
         padding: 0 .25em .5em 0;
         margin: 0 10px;
         color: #fff;
-        &:hover{
-            border-bottom: 1px solid #fff;
-        }
-        a{
-            color: #fff;
+        &:after{
+            margin-top: 5px;
+            display: block;
+            content: "";
+            width: 0%;
+            background-color: white;
+            height: 3px;
+            transition: width 1s;
+            }
+            &:hover::after{
+            transition: width 1s;
+            width: 100%;
         }
     }
 };

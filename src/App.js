@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import "./App.scss";
-
 import Header from './components/Header/Header';
 import MainHeader from './components/MainHero/MainHero';
 import AboutMe from './components/AboutMe/AboutMe';
@@ -19,24 +18,21 @@ class App extends Component {
     }
   }
 
-   scrollIntoThisDiv = (id) => {
+  scrollIntoThisDiv = (id) => {
     const divToScrollInto = document.getElementById(`${id}`);
-    divToScrollInto.scrollIntoView({behavior: "smooth" , block: "start"});
-}
+    divToScrollInto.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
   render() {
-
-
     return (
-      <div>
-        <Header scrollIntoThisDiv={this.scrollIntoThisDiv}/>
+      <Fragment>
+        <Header scrollIntoThisDiv={this.scrollIntoThisDiv} />
         <main>
-          <MainHeader mainHeroIcons={this.state.mainHeroIcons} scrollIntoThisDiv={this.scrollIntoThisDiv}/>
+          <MainHeader mainHeroIcons={this.state.mainHeroIcons} scrollIntoThisDiv={this.scrollIntoThisDiv} />
           <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} challenges={this.state.challenges} />
           <AboutMe />
           <Contact />
         </main>
-
-      </div>
+      </Fragment>
     );
   }
 }
