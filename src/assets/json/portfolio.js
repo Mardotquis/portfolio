@@ -61,28 +61,28 @@ const projectInformation = [
     {
         "projectName": "DuragsRUs",
         "projectDescription": "Ecommerce project featuring React, MySQL, and Auth-0. Also practiced with MongoDB in earlier version.",
-        "projectImgPath": "http://d3umk6exgg3emi.cloudfront.net/ecommerce.png",
+        "projectImgPath": "https://d3umk6exgg3emi.cloudfront.net/ecommerce.png",
         "githubLink": "https://github.com/Mardotquis/DuragsRUs",
         "websiteLink": "https://duragsrus.netlify.com/"
     },
     {
         "projectName": "Bot-O-Mat",
         "projectDescription": "Assignment to make robot complete tasks and remove them from the list when they're done!",
-        "projectImgPath": "http://d3umk6exgg3emi.cloudfront.net/botomatscreenshot.png",
+        "projectImgPath": "https://d3umk6exgg3emi.cloudfront.net/botomatscreenshot.png",
         "githubLink": "https://github.com/Mardotquis/bot-o-mat",
         "websiteLink": "https://botomat.netlify.com"
     },
     {
         "projectName": "MyMove",
         "projectDescription": "Midterm project built from a Sketch file provided by RoadToHire.",
-        "projectImgPath": "http://d3umk6exgg3emi.cloudfront.net/mymove.png",
+        "projectImgPath": "https://d3umk6exgg3emi.cloudfront.net/mymove.png",
         "githubLink": "https://github.com/Mardotquis/MyMove-Project",
         "websiteLink": "https://mardotquis.github.io/MyMove-Project/"
     },
     {
         "projectName": "Guessing Game",
         "projectDescription": "First game built using React! ",
-        "projectImgPath": "http://d3umk6exgg3emi.cloudfront.net/guessinggame.png",
+        "projectImgPath": "https://d3umk6exgg3emi.cloudfront.net/guessinggame.png",
         "githubLink": "https://github.com/Mardotquis/guessing_game",
         "websiteLink": "https://mardotquis.github.io/guessing_game/"
     }
