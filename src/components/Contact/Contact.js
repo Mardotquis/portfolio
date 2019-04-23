@@ -10,30 +10,30 @@ const Contact = () => {
             , guestEmail = document.querySelector('#guestEmail').value
             , guestMessage = document.querySelector('#guestMessage').value
             , bodyBeingSent = { firstName, lastName, phoneNumber, guestEmail, guestMessage };
-        fetch("https://marquisportfolio-221614.appspot.com", {
+        fetch("https://ur48tpvc4i.execute-api.us-east-1.amazonaws.com/prod/contact", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(bodyBeingSent)
         })
             .then(response => {
-                if(response.status === 200){
+                if (response.status === 200) {
                     formResponse(true)
-                }else{
+                } else {
                     formResponse(false)
                 }
             })
             .catch(() => formResponse(false));
     };
 
-    const formResponse = (status) =>{
+    const formResponse = (status) => {
         const form = document.querySelector('.contact__form');
         const message = document.querySelector('.contact__form_response');
         form.classList.toggle("fadeOut");
         message.classList.toggle("fadeIn");
-        if(status){
+        if (status) {
             message.innerHTML = "Thank you for your response."
         }
-        else{
+        else {
             message.innerHTML = `There was an error submitting your response. Please try again or <a href="mailto:marquis0403@gmail.com" className="contact__span-email">email</a> me!`
         }
     }
