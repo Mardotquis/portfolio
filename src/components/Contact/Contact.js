@@ -16,6 +16,7 @@ const Contact = () => {
             body: JSON.stringify(bodyBeingSent)
         })
             .then(response => {
+                console.log('RESPONSE STATUS', response.status)
                 if (response.status === 200) {
                     formResponse(true)
                 } else {
