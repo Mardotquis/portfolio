@@ -13,7 +13,8 @@ const Contact = () => {
         fetch("https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/contact", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(bodyBeingSent)
+            body: JSON.stringify(bodyBeingSent),
+            statusCode: 200
         })
             .then(response => {
                 console.log('RESPONSE STATUS', response.status)
