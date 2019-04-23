@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
 
-    const submitForm = async (e) => {
+    const submitForm = (e) => {
         e.preventDefault();
         const firstName = document.querySelector('#firstName').value
             , lastName = document.querySelector('#lastName').value
@@ -10,7 +10,7 @@ const Contact = () => {
             , guestEmail = document.querySelector('#guestEmail').value
             , guestMessage = document.querySelector('#guestMessage').value
             , bodyBeingSent = { firstName, lastName, phoneNumber, guestEmail, guestMessage };
-        await fetch("https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/contact", {
+        fetch("https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/contact", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(bodyBeingSent)
