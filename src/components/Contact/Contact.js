@@ -10,7 +10,7 @@ const Contact = () => {
             , guestEmail = document.querySelector('#guestEmail').value
             , guestMessage = document.querySelector('#guestMessage').value
             , bodyBeingSent = { firstName, lastName, phoneNumber, guestEmail, guestMessage };
-        fetch("https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/test", {
+        fetch("https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/contact", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(bodyBeingSent),
