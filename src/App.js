@@ -17,7 +17,11 @@ class App extends Component {
       challenges
     }
   }
+
+
+
   componentDidMount() {
+    console.log('component is mounting')
     fetch("https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/pageload", {
       method: "POST",
       headers: { 'Content-Type': 'application/json' },
@@ -27,28 +31,27 @@ class App extends Component {
       .then(response => {
         console.log('RESPONSE STATUS', response.status)
       })
-  };
-
-}
+  }
 
 
-scrollIntoThisDiv = (id) => {
-  const divToScrollInto = document.getElementById(`${id}`);
-  divToScrollInto.scrollIntoView({ behavior: "smooth", block: "start" });
-}
-render() {
-  return (
-    <Fragment>
-      <Header scrollIntoThisDiv={this.scrollIntoThisDiv} />
-      <main>
-        <MainHeader mainHeroIcons={this.state.mainHeroIcons} scrollIntoThisDiv={this.scrollIntoThisDiv} />
-        <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} challenges={this.state.challenges} />
-        <AboutMe />
-        <Contact />
-      </main>
-    </Fragment>
-  );
-}
+
+  scrollIntoThisDiv = (id) => {
+    const divToScrollInto = document.getElementById(`${id}`);
+    divToScrollInto.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  render() {
+    return (
+      <Fragment>
+        <Header scrollIntoThisDiv={this.scrollIntoThisDiv} />
+        <main>
+          <MainHeader mainHeroIcons={this.state.mainHeroIcons} scrollIntoThisDiv={this.scrollIntoThisDiv} />
+          <Projects backgroundIcons={this.state.backgroundIcons} projectInformation={this.state.projectInformation} challenges={this.state.challenges} />
+          <AboutMe />
+          <Contact />
+        </main>
+      </Fragment>
+    );
+  }
 }
 
 export default App;
