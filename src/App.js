@@ -18,9 +18,9 @@ class App extends Component {
     }
   }
 
-
-
-  componentDidMount() {
+  sendPageHeaders = () => {
+    if (process.env.NODE_ENV === "development") return;
+    // stop the function if I'm currently doing development testing
     try {
       fetch("https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/pageload", {
         method: "POST",
@@ -30,6 +30,10 @@ class App extends Component {
     } catch (e) {
       console.log(e)
     }
+  }
+
+  componentDidMount() {
+    this.sendPageHeaders()
   }
 
 
