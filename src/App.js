@@ -21,15 +21,15 @@ class App extends Component {
 
 
   componentDidMount() {
-    console.log('component is mounting')
-    fetch("https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/pageload", {
-      method: "POST",
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text: "hello" })
-    })
-      .then(response => {
-        console.log('RESPONSE STATUS', response.status)
+    try {
+      fetch("https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/pageload", {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: "hello" })
       })
+    } catch (e) {
+      console.log(e)
+    }
   }
 
 

@@ -40,6 +40,10 @@ const backgroundIcons = [
         "iconCaption": "Node.js"
     },
     {
+        "iconPath": "/img/icons/python.svg",
+        "iconCaption": "Python"
+    },
+    {
         "iconPath": "/img/icons/mongodb.svg",
         "iconCaption": "MongoDB"
     },
