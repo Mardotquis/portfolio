@@ -61,32 +61,33 @@ const backgroundIcons = [
     }
 ];
 
+const CDNLink = 'https://d3umk6exgg3emi.cloudfront.net'
 const projectInformation = [
     {
+        "projectName": "Be Well Therapy",
+        "projectDescription": "Freelance project for a local therapist business. A full stack, server-side rendered application leveraging Next.js + Serverless.",
+        "projectImgPath": `${CDNLink}/bewelltherapy.png`,
+        "githubLink": "https://github.com/Mardotquis/be-well-therapy",
+        "websiteLink": "https://bewelltherapy.org"
+    },
+    {
         "projectName": "DuragsRUs",
-        "projectDescription": "Ecommerce project featuring React, MySQL, and Auth-0. Also practiced with MongoDB in earlier version.",
-        "projectImgPath": "https://d3umk6exgg3emi.cloudfront.net/ecommerce.png",
+        "projectDescription": "A full stack ecommerce project featuring React, MySQL, and Auth-0.",
+        "projectImgPath": `${CDNLink}/ecommerce.png`,
         "githubLink": "https://github.com/Mardotquis/DuragsRUs",
         "websiteLink": "https://duragsrus.netlify.com/"
     },
     {
-        "projectName": "Bot-O-Mat",
-        "projectDescription": "Assignment to make robot complete tasks and remove them from the list when they're done!",
-        "projectImgPath": "https://d3umk6exgg3emi.cloudfront.net/botomatscreenshot.png",
-        "githubLink": "https://github.com/Mardotquis/bot-o-mat",
-        "websiteLink": "https://botomat.netlify.com"
-    },
-    {
         "projectName": "MyMove",
-        "projectDescription": "Midterm project built from a Sketch file provided by RoadToHire.",
-        "projectImgPath": "https://d3umk6exgg3emi.cloudfront.net/mymove.png",
+        "projectDescription": "Bootcamp midterm project featuring static HTML + CSS. Built using a Sketch file.",
+        "projectImgPath": `${CDNLink}/mymove.png`,
         "githubLink": "https://github.com/Mardotquis/MyMove-Project",
         "websiteLink": "https://mardotquis.github.io/MyMove-Project/"
     },
     {
         "projectName": "Guessing Game",
-        "projectDescription": "First game built using React! ",
-        "projectImgPath": "https://d3umk6exgg3emi.cloudfront.net/guessinggame.png",
+        "projectDescription": "Fun guessing game built using React!",
+        "projectImgPath": `${CDNLink}/guessinggame.png`,
         "githubLink": "https://github.com/Mardotquis/guessing_game",
         "websiteLink": "https://mardotquis.github.io/guessing_game/"
     }
