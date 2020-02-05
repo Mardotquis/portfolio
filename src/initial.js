@@ -16,7 +16,7 @@ function setTags(ipInfo) {
 
 function logVisitor(ipInfo={}) {
   // only attaching the ':: <ip-address>' along if it's defined
-  Sentry.captureMessage(`New portfolio visitor!${(ipInfo && ipInfo.query) ? ` :: ${ipInfo.query}` : ''}`, 'info');
+  Sentry.captureMessage(`New portfolio visitor!${(ipInfo && ipInfo.ip) ? ` :: ${ipInfo.ip}` : ''}`, 'info');
 }
 
 export default async function() {
@@ -26,13 +26,22 @@ export default async function() {
   }
 
  // first initializing Sentry in the project
-  Sentry.init({dsn: process.env.SENTRY_DSN});
+  Sentry.init({dsn: "https://89ef92b639924bf5a647d64c1f7d8c6c@sentry.io/2253657"});
+  /**********
+  also not hiding the DSN via an environment variable because
+  the user can see it anyway when they check the Network requests...
 
+  I'll just whitelist the website's URL
+  **********/
   let ipInfo;
 
   try {
-    // then getting IP information together for tags
-    ipInfo = (await axios('http://ip-api.com/json')).data
+    /**********
+    then getting IP information together for tags
+
+    also don't care about this API key because the information isn't that important
+    **********/
+    ipInfo = (await axios('https://ipinfo.io/?token=dc78148815ec7b')).data
     setTags(ipInfo)
   } catch (error) {
     console.log('Error with initial load setup.')
