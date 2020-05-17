@@ -14,7 +14,32 @@ const mainHeroIcons = [
     }
 ];
 
+// icons are from https://icons8.com/ and https://www.flaticon.com/
 const backgroundIcons = [
+    {
+        "iconPath": "/img/icons/reactjs.svg",
+        "iconCaption": "React.js"
+    },
+    {
+        "iconPath": "/img/icons/javascript.svg",
+        "iconCaption": "JavaScript (ES6+)"
+    },
+    {
+        "iconPath": "/img/icons/typescript.svg",
+        "iconCaption": "TypeScript"
+    },
+    {
+        "iconPath": "/img/icons/nodejs.svg",
+        "iconCaption": "Node.js"
+    },
+    {
+        "iconPath": "/img/icons/python.svg",
+        "iconCaption": "Python"
+    },
+    {
+        "iconPath": "/img/icons/aws.svg",
+        "iconCaption": "Amazon Web Services"
+    },
     {
         "iconPath": "/img/icons/html5.svg",
         "iconCaption": "Semantic HTML5"
@@ -28,37 +53,21 @@ const backgroundIcons = [
         "iconCaption": "Sass"
     },
     {
-        "iconPath": "/img/icons/javascript.svg",
-        "iconCaption": "JavaScript (ES6+)"
-    },
-    {
-        "iconPath": "/img/icons/reactjs.svg",
-        "iconCaption": "React.js"
-    },
-    {
-        "iconPath": "/img/icons/nodejs.svg",
-        "iconCaption": "Node.js"
-    },
-    {
-        "iconPath": "/img/icons/python.svg",
-        "iconCaption": "Python"
-    },
-    {
-        "iconPath": "/img/icons/mongodb.svg",
-        "iconCaption": "MongoDB"
+        "iconPath": "/img/icons/graphql.svg",
+        "iconCaption": "GraphQL"
     },
     {
         "iconPath": "/img/icons/mysql.svg",
         "iconCaption": "MySQL"
     },
     {
+        "iconPath": "/img/icons/mongodb.svg",
+        "iconCaption": "MongoDB"
+    },
+    {
         "iconPath": "/img/icons/git.svg",
         "iconCaption": "Git/GitHub"
     },
-    {
-        "iconPath": "/img/icons/aws.svg",
-        "iconCaption": "Amazon Web Services"
-    }
 ];
 
 const CDNLink = 'https://d3umk6exgg3emi.cloudfront.net'

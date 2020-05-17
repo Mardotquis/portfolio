@@ -109,10 +109,10 @@ align-items: center;
 };
 .tech__icons{
     margin: 2em  4em;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     text-align: center;
-    font-size: 1.15em;
+    font-size: 1em;
     font-style: italic;
     @media (max-width: $techIconsBreakpoint){
         height: 100px;
@@ -122,11 +122,11 @@ align-items: center;
 
 }
 .tech__icons-background{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     background-size: cover;
     margin-bottom: .25em;
-    animation: jello 1.5s infinite;
+    animation: heartBeat 2s infinite;
 
 
     @media (max-width: $techIconsBreakpoint){
