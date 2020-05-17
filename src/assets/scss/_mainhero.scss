@@ -1,88 +1,89 @@
-.mainhero{
-    height: 100vh;
-    display: flex;
+.mainhero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: $mainheroBreakpoint) {
+    .main_primary_text {
+      font-size: 3em;
+    }
+    .main_secondary_text {
+      font-size: 1.5em;
+    }
+  }
+  @media (max-width: $mainheroBreakpointSmall) {
+    .main_primary_text {
+      font-size: 1.5em;
+    }
+    .main_secondary_text {
+      font-size: 1em;
+    }
+  }
+}
+.main_primary_text,
+.main_secondary_text {
+  display: block;
+}
+
+.main_primary_text {
+  font-size: 5em;
+  font-weight: 900;
+  top: 43%;
+  right: 50%;
+}
+
+.main_secondary_text {
+  font-size: 2.5em;
+  top: 53%;
+  right: 50%;
+  padding: 2em;
+}
+
+.main_open-brace {
+  margin-right: 15px;
+}
+.main_close-brace {
+  margin-left: 15px;
+}
+.mainhero__icon-container {
+  display: flex;
+  @media (max-width: $mainheroBreakpointSmall) {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    @media (max-width: $mainheroBreakpoint){
-        .main_primary_text{
-            font-size: 3em;
-        }
-        .main_secondary_text{
-            font-size: 1.5em;
-        }
+    .mainhero__icons {
+      height: 40px;
+      width: 40px;
     }
-    @media (max-width: $mainheroBreakpointSmall) {
-
-        .main_primary_text{
-            font-size: 1.5em;
-        }
-        .main_secondary_text{
-            font-size: 1em;
-        }
-    }
+  }
 }
-.main_primary_text, .main_secondary_text{
-    display: block;
+.mainhero__icons {
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-image: url('/img/icons/redinstagram.svg');
+  padding: 0.5em;
+  margin: 0.5em 1.5em;
+  transition: all 500ms;
+  &:hover {
+    opacity: 0.65;
+  }
 }
-
-.main_primary_text{
-    font-size: 5em;
-    font-weight: 900;
-    top: 43%; right: 50%;
-
-}
-
-.main_secondary_text{
-    font-size: 2.5em;
-    top: 53%; right: 50%;
-    padding: 2em;
-}
-
-.main_open-brace{
-    margin-right: 15px;
-}
-.main_close-brace{
-    margin-left: 15px;
-}
-.mainhero__icon-container{
-    display: flex;
-    @media (max-width: $mainheroBreakpointSmall){
-        flex-direction: column;
-        .mainhero__icons{
-            height: 40px;
-            width: 40px;
-        }
-    }
-}
-.mainhero__icons{
-    height: 100px;
-    width: 100px;
+.main--downarrow_container {
+  position: absolute;
+  bottom: 30px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .main--downarrow {
+    width: 50px;
+    height: 50px;
     background-size: cover;
-    background-image: url('/img/icons/redinstagram.svg');
-    padding: .5em;
-    margin: .5em 1.5em;
-    transition: all 500ms;
-    &:hover{
-        opacity: .65;
-    }
-}
-.main--downarrow_container{
-    position: absolute;
-    bottom: 30px;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    .main--downarrow{
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        background-image: url('/img/downarrow.svg');
-        display: block;
-        animation: fadeInDown 3s infinite;
-    }
-    .main--downarrow_text{
-        text-align: center;
-    }
+    background-image: url('/img/downarrow.svg');
+    display: block;
+    animation: fadeInDown 3s infinite;
+  }
+  .main--downarrow_text {
+    text-align: center;
+  }
 }
