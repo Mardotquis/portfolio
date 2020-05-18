@@ -28,10 +28,8 @@ export default async function () {
   if (
     process.env.NODE_ENV == 'development' ||
     window.location.hostname.includes('hellomarquis.com')
-  ) {
-    console.log('testing...');
+  )
     return;
-  }
 
   // first initializing Sentry in the project
   Sentry.init({
