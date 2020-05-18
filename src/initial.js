@@ -54,9 +54,11 @@ export default async function () {
     setTags(ipInfo);
 
     // sending headers to custom pageload integration
-    await axios.post(
-      'https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/pageload'
-    );
+    await axios({
+      url: 'https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/pageload',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text: 'hello' }),
+    });
   } catch (error) {
     console.log('Error with initial load setup.');
   }
