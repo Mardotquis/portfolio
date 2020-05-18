@@ -22,11 +22,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint:check"
-    }
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -38,7 +33,6 @@
   ],
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "husky": "^4.2.5",
     "prettier": "2.0.5"
   }
 }
