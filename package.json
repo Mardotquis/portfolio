@@ -15,14 +15,16 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "lint": "prettier --write '**/*.{js,scss}'",
+    "lint": "prettier '**/*.{js,scss}'",
+    "lint:check": "npm run lint -- --check",
+    "lint:write": "npm run lint -- --write",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run lint:check"
     }
   },
   "eslintConfig": {

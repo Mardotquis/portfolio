@@ -25,8 +25,11 @@ function logVisitor(ipInfo = {}) {
 
 export default async function () {
   // stopping the function inside development environment or if it's hosted on a testing/development link(Netlify)
-  if (process.env.NODE_ENV == 'development' || window.location.hostname.includes('hellomarquis.com')) {
-    console.log("testing...")
+  if (
+    process.env.NODE_ENV == 'development' ||
+    window.location.hostname.includes('hellomarquis.com')
+  ) {
+    console.log('testing...');
     return;
   }
 
