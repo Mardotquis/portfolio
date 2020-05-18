@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "lint": "prettier '**/*.{js,scss}'",
+    "lint": "prettier '**/*.{js,json,scss}'",
     "lint:check": "npm run lint -- --check",
     "lint:write": "npm run lint -- --write",
     "build": "react-scripts build",
