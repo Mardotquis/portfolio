@@ -27,9 +27,10 @@ export default async function () {
   // stopping the function inside development environment or if it's hosted on a testing/development link(Netlify)
   if (
     process.env.NODE_ENV == 'development' ||
-    window.location.hostname.includes('hellomarquis.com')
-  )
+    !window.location.hostname.includes('hellomarquis.com')
+  ) {
     return;
+  }
 
   // first initializing Sentry in the project
   Sentry.init({
@@ -51,6 +52,11 @@ export default async function () {
     **********/
     ipInfo = (await axios('https://ipinfo.io/?token=dc78148815ec7b')).data;
     setTags(ipInfo);
+
+    // sending headers to custom pageload integration
+    await axios.post(
+      'https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/pageload'
+    );
   } catch (error) {
     console.log('Error with initial load setup.');
   }

@@ -23,31 +23,11 @@ class App extends Component {
     };
   }
 
-  sendPageHeaders = () => {
-    if (process.env.NODE_ENV === 'development') return;
-    // stop the function if I'm currently doing development testing
-    try {
-      fetch(
-        'https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/pageload',
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ text: 'hello' }),
-        }
-      );
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
-  componentDidMount() {
-    this.sendPageHeaders();
-  }
-
   scrollIntoThisDiv = (id) => {
     const divToScrollInto = document.getElementById(`${id}`);
     divToScrollInto.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
+
   render() {
     return (
       <Fragment>
