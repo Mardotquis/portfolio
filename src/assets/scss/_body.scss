@@ -1,33 +1,35 @@
-body{
-    font-family: $roboto;
-    color: #fff;
-    background-color: $brightred;
+body {
+  font-family: $roboto;
+  color: #fff;
+  background-color: $brightred;
 }
 
-main{
-    max-width: 2200px;
-    margin: 0 auto;
+main {
+  max-width: 2200px;
+  margin: 0 auto;
 }
-.header__nav_listitem, .main--downarrow_container, .header__primary_logo{
-    cursor: pointer;
+.header__nav_listitem,
+.main--downarrow_container,
+.header__primary_logo {
+  cursor: pointer;
 }
-.section__header__primary{
-    font-size: 3.5em;
-    text-transform: uppercase;
-    margin-bottom: 1em;
-    @media (max-width: $mainheroBreakpoint){
-        font-size: 2em;
-        text-align: center !important;
-      margin:  1em !important;
-      padding-top: 120px;
-    }
-    @media (max-width: $mainheroBreakpointSmall){
-        font-size: 1.5em;
-    }
-};
-h2{
+.section__header__primary {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  @media (max-width: $mainheroBreakpoint) {
+    font-size: 2em;
+    text-align: center !important;
+    margin: 1em !important;
     padding-top: 120px;
-    @media (max-width: $mainheroBreakpointSmall) {
-        padding-top: 0;
-    }
+  }
+  @media (max-width: $mainheroBreakpointSmall) {
+    font-size: 1.5em;
+  }
+}
+h2 {
+  padding-top: 120px;
+  @media (max-width: $mainheroBreakpointSmall) {
+    padding-top: 0;
+  }
 }

@@ -1,37 +1,42 @@
 //VARIABLES
-@import "./assets/scss/variables";
+@import './assets/scss/variables';
 
 //NORMALIZE
-@import "./assets/scss/normalize";
+@import './assets/scss/normalize';
 
 //ANIMATIONS FROM ANIMATE.CSS
-@import "./assets/scss/animate";
+@import './assets/scss/animate';
 
 //HEADER STYLES
-@import "./assets/scss/header";
+@import './assets/scss/header';
 
 //MAINHERO STYLES
-@import "./assets/scss/mainhero";
+@import './assets/scss/mainhero';
 
 //ABOUT ME STYLES
-@import "./assets/scss/aboutme";
+@import './assets/scss/aboutme';
 
 //PROJECTS STYLES
-@import "./assets/scss/projects";
+@import './assets/scss/projects';
 
 //CONTACT STYLES
-@import "./assets/scss/contact";
+@import './assets/scss/contact';
 
 //FOOTER STYLES
-@import "./assets/scss/footer";
+@import './assets/scss/footer';
 
 //OVERALL BODY STYLES
-@import "./assets/scss/body";
+@import './assets/scss/body';
 
-body{
-    animation: fadeInPageLoad 2s;
+body {
+  animation: fadeInPageLoad 2s;
 }
 
 @keyframes fadeInPageLoad {
-    from{opacity: 0;} to{opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

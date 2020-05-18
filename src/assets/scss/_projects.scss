@@ -1,305 +1,294 @@
-#projects{
-    h2{
+#projects {
+  h2 {
     margin-left: 1em;
-    };
-};
-.projects__card{
-    position: relative;
+  }
+}
+.projects__card {
+  position: relative;
 
-height: 450px;
-margin: 3em;
-overflow: hidden;
-border-radius: 5px;
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-transform:translatez(0);//helps ??
-@media (max-width: $projectsBreakpoint){
+  height: 450px;
+  margin: 3em;
+  overflow: hidden;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transform: translatez(0); //helps ??
+  @media (max-width: $projectsBreakpoint) {
     background-attachment: scroll;
     background-position: center;
+  }
 }
+.project_card_information {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
-};
-.project_card_information{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-
-    z-index: -5;
-    position: absolute;
-background-color: $darkred;
-right: 0;
-top: 0;
-opacity: .85;
-width: 50%;
-height: 100%;
-z-index: 5;
-@media (max-width: $projectsBreakpoint){
+  z-index: -5;
+  position: absolute;
+  background-color: $darkred;
+  right: 0;
+  top: 0;
+  opacity: 0.85;
+  width: 50%;
+  height: 100%;
+  z-index: 5;
+  @media (max-width: $projectsBreakpoint) {
     width: 100%;
-}
+  }
 
-// transform: skew(30deg);
-.project__name{
+  // transform: skew(30deg);
+  .project__name {
     font-size: 3em;
     text-align: center;
-    padding: 0 .5em;
-    @media (max-width: $projectBackgroundBreakpoint){
-        font-size: 2.5em;
+    padding: 0 0.5em;
+    @media (max-width: $projectBackgroundBreakpoint) {
+      font-size: 2.5em;
     }
-};
-.project__description{
+  }
+  .project__description {
     font-size: 1.25em;
     text-align: center;
-    padding: 0 .75em;
+    padding: 0 0.75em;
     line-height: 25px;
-    @media (max-width: $projectBackgroundBreakpoint){
-       font-size: 1.1em;
-       padding: 0 .5em;
+    @media (max-width: $projectBackgroundBreakpoint) {
+      font-size: 1.1em;
+      padding: 0 0.5em;
     }
-};
-.project__icons{
+  }
+  .project__icons {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    .github__icon, .website__icon{
-        width: 100px;
-        height: 100px;
-        background-size: cover;
-        z-index: 5;
-        display: block;
-        margin: auto;
-        @media (max-width: $projectBackgroundBreakpoint){
-            height: 70px;
-            width: 70px;
-        }
+    .github__icon,
+    .website__icon {
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      z-index: 5;
+      display: block;
+      margin: auto;
+      @media (max-width: $projectBackgroundBreakpoint) {
+        height: 70px;
+        width: 70px;
+      }
     }
-    .github__icon{
-        background-image: url('/img/github.svg');
-    };
-    .website__icon{
-    background-image: url('/img/website.svg')
-    };
-    .project__icons-wrapper{
-        padding: 0 2em 2em 2em;
-    };
-    .project__icon-text{
-        font-weight: bold;
-        @media (max-width: 470px){
-            display: none;
-        }
+    .github__icon {
+      background-image: url('/img/github.svg');
     }
-};
+    .website__icon {
+      background-image: url('/img/website.svg');
+    }
+    .project__icons-wrapper {
+      padding: 0 2em 2em 2em;
+    }
+    .project__icon-text {
+      font-weight: bold;
+      @media (max-width: 470px) {
+        display: none;
+      }
+    }
+  }
+}
+.projects__header__secondary {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  @media (max-width: $mainheroBreakpointSmall) {
+    font-size: 1.25em;
+    margin-left: 0 !important;
+  }
+}
+.tech__icon-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.tech__icons {
+  margin: 2em 4em;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 1em;
+  font-style: italic;
+  @media (max-width: $techIconsBreakpoint) {
+    height: 100px;
+    width: 100px;
+    margin: 2em 1em;
+  }
+}
+.tech__icons-background {
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  margin-bottom: 0.25em;
+  animation: heartBeat 2s infinite;
 
-};
-.projects__header__secondary{
+  @media (max-width: $techIconsBreakpoint) {
+    height: 75px;
+    width: 75px;
+    margin: auto;
+  }
+}
+
+.challenges {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  &__header_primary {
     font-size: 2em;
     text-align: center;
-    margin-bottom: 1em;
-    @media (max-width: $mainheroBreakpointSmall){
-        font-size: 1.25em;
-        margin-left: 0 !important;
+  }
+
+  &__card {
+    height: 500px;
+    width: 500px;
+    color: $darkred;
+    margin: 2em 2em;
+    border-radius: 10px;
+    position: relative;
+    overflow: scroll;
+    &-modal {
+      display: none;
+      position: fixed;
+      top: 10%;
+      width: 750px;
+      height: 600px;
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 210;
+      background-size: cover;
+      overflow: scroll;
+      &-background {
+        height: 1200px;
+        width: 750px;
+        // background-image: url('/img/ajaxapicarbon.png');
+        background-size: cover;
+        z-index: 210;
+        display: none;
+      }
+      &-overlay {
+        position: fixed;
+        display: none;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        width: 100vw;
+        background-color: #000;
+        opacity: 0.7;
+        z-index: 209;
+        // display: block;
+      }
     }
-}
-.tech__icon-wrapper{
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-align-content: center;
-align-items: center;
-};
-.tech__icons{
-    margin: 2em  4em;
-    height: 150px;
-    width: 150px;
-    text-align: center;
-    font-size: 1.15em;
-    font-style: italic;
-    @media (max-width: $techIconsBreakpoint){
-        height: 100px;
-        width: 100px;
-        margin: 2em 1em;
+    &-background {
+      position: absolute;
+      // background-image: url('/img/ajaxapicarbon.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 900px;
+      width: 500px;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      opacity: 0.18;
+      animation: 400ms fadeOut ease-in;
+      border-radius: inherit;
+      &:hover {
+        animation: 500ms fadeInto ease-in;
+        animation-fill-mode: forwards;
+        cursor: zoom-in;
+      }
     }
 
-}
-.tech__icons-background{
-    height: 150px;
-    width: 150px;
-    background-size: cover;
-    margin-bottom: .25em;
-    animation: jello 1.5s infinite;
-
-
-    @media (max-width: $techIconsBreakpoint){
-        height: 75px;
-        width: 75px;
-        margin:  auto;
+    &-hidden {
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 500px;
+      opacity: 1;
+      padding: 1em;
+      border-radius: inherit;
     }
-
-}
-
-.challenges{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    &__header_primary{
-        font-size: 2em;
-        text-align: center;
+    &__header_primary {
+      font-size: 2.5em;
+      text-align: center;
+      z-index: 100;
+      color: $darkred;
     }
-
-        &__card{
-            height: 500px;
-            width: 500px;
-            color: $darkred;
-            margin: 2em 2em;
-            border-radius: 10px;
-            position: relative;
-            overflow: scroll;
-            &-modal{
-                display: none;
-                position: fixed;
-                top: 10%;
-                width: 750px;
-                height: 600px;
-                position: fixed;
-                left: 50%;
-                transform: translate(-50%, 0);
-                z-index: 210;
-                background-size: cover;
-                overflow: scroll;
-                &-background{
-                    height: 1200px;
-                    width: 750px;
-                    // background-image: url('/img/ajaxapicarbon.png');
-                background-size: cover;
-                z-index: 210;
-                display: none;
-                }
-                &-overlay{
-                    position: fixed;
-                    display: none;
-                    top: 0px;
-                    left: 0px;
-                    height: 100vh;
-                    width: 100vw;
-                    background-color: #000;
-                    opacity: .7;
-                    z-index: 209;
-                    // display: block;
-                }
-            }
-            &-background{
-                position: absolute;
-                // background-image: url('/img/ajaxapicarbon.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 900px;
-                width: 500px;
-                z-index: 10;
-                top: 0;
-                left: 0;
-                opacity: .18;
-                animation: 400ms fadeOut ease-in;
-                border-radius: inherit;
-                &:hover{
-                    animation: 500ms fadeInto ease-in;
-                    animation-fill-mode: forwards;
-                    cursor: zoom-in
-                }
-            }
-
-            &-hidden{
-                background-color: #fff;
-                position: absolute;
-                top: 0;
-                height: 100%;
-                width: 500px;
-                opacity: 1;
-                padding: 1em;
-                border-radius: inherit;
-
-            }
-                &__header_primary{
-                    font-size: 2.5em;
-                    text-align: center;
-                    z-index: 100;
-                    color: $darkred;
-
-                }
-                &__text_primary{
-                    margin-top: 2em;
-                    line-height: 25px;
-                    letter-spacing: .5px;
-                    &::first-letter{
-                        margin-left: 2em;
-                    }
-                }
-        }
-
+    &__text_primary {
+      margin-top: 2em;
+      line-height: 25px;
+      letter-spacing: 0.5px;
+      &::first-letter {
+        margin-left: 2em;
+      }
+    }
+  }
 }
 
 .fadeInto {
-    animation: 500ms fadeInto ease;
-    animation-fill-mode: both;
-    display: block;
+  animation: 500ms fadeInto ease;
+  animation-fill-mode: both;
+  display: block;
 }
-.fadeOut{
-    animation: 500ms fadeOut ease;
-    animation-fill-mode: both;
-    display: none;
+.fadeOut {
+  animation: 500ms fadeOut ease;
+  animation-fill-mode: both;
+  display: none;
 }
 
 .modalOverlayOpen {
-    animation: 500ms modalOverlayOpen ease;
-    animation-fill-mode: both;
-    display: block;
+  animation: 500ms modalOverlayOpen ease;
+  animation-fill-mode: both;
+  display: block;
 }
 
-@keyframes fadeOut{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: .18;
-
-
-    }
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.18;
+  }
 }
 
-@keyframes fadeInto{
-    from{
-        opacity: .18;
-    }
-    to{
-        opacity: 1;
-    }
+@keyframes fadeInto {
+  from {
+    opacity: 0.18;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes closeModal{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-
-
-    }
+@keyframes closeModal {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
-@keyframes openModal{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@keyframes openModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes modalOverlayOpen{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: .75;
-    }
+@keyframes modalOverlayOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.75;
+  }
 }

@@ -1,57 +1,55 @@
-#aboutme{
-
-    h2{
+#aboutme {
+  h2 {
     text-align: right;
     margin-right: 1em;
-    }
-
+  }
 }
-.aboutme_content{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: column;
-};
-.about_picture_figure{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
+.aboutme_content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-.rounded_marquis{
-    height: 320px;
-    width: 350px;
-    border-radius: 20px;
-    margin: auto;
-    display: block;
-    @media (max-width: $mainheroBreakpointSmall) {
-        height: 200px;
-        width: 250px;
-    };
-};
-.aboutme__paragraph{
-    // margin-top: 1.5em;
-padding: 2em;
-    font-size: 1.25em;
-    letter-spacing: 2px;
-    line-height: 40px;
-    display: block;
-    font-weight: 500;
-    @media (max-width: $mainheroBreakpointSmall) {
-      font-size: .75em;
-      line-height: 30px;
-    }
-    &::first-letter{
-        margin-left: 3em;
-    }
-    .important-bold{
-        font-weight: 900;
-        // color: blue;
-        font-style: italic;
-        font-weight: .25em;
-    }
+.about_picture_figure {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
 }
-.bottom{
-    margin-top: none;
-padding: 0 2em 2em 2em;
+.rounded_marquis {
+  height: 320px;
+  width: 350px;
+  border-radius: 20px;
+  margin: auto;
+  display: block;
+  @media (max-width: $mainheroBreakpointSmall) {
+    height: 200px;
+    width: 250px;
+  }
+}
+.aboutme__paragraph {
+  // margin-top: 1.5em;
+  padding: 2em;
+  font-size: 1.25em;
+  letter-spacing: 2px;
+  line-height: 40px;
+  display: block;
+  font-weight: 500;
+  @media (max-width: $mainheroBreakpointSmall) {
+    font-size: 0.75em;
+    line-height: 30px;
+  }
+  &::first-letter {
+    margin-left: 3em;
+  }
+  .important-bold {
+    font-weight: 900;
+    // color: blue;
+    font-style: italic;
+    font-weight: 0.25em;
+  }
+}
+.bottom {
+  margin-top: none;
+  padding: 0 2em 2em 2em;
 }
