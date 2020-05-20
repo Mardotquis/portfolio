@@ -16,8 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "lint": "prettier '**/*.{js,json,scss}'",
-    "lint:check": "npm run lint -- --check",
-    "lint:write": "npm run lint -- --write",
+    "lint:c": "npm run lint -- --check",
+    "lint:w": "npm run lint -- --write",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"

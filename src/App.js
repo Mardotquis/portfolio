@@ -17,7 +17,7 @@ const App = () => {
   useEffect(() => {
     // initalizing Google Analytics
     ReactGA.initialize('UA-166793173-1');
-  }, [])
+  }, []);
 
   const scrollIntoThisDiv = (id) => {
     const divToScrollInto = document.getElementById(`${id}`);
@@ -42,6 +42,6 @@ const App = () => {
       </main>
     </Fragment>
   );
-}
+};
 
 export default App;

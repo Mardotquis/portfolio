@@ -55,14 +55,14 @@ export default async function () {
     // sending headers to custom pageload integration
     await axios({
       method: 'post',
-      url: 'https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/pageload',
+      url:
+        'https://qz4rx6qar7.execute-api.us-east-1.amazonaws.com/prod/pageload',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text: 'hello' }),
     });
   } catch (error) {
     console.log('Error with initial load setup.');
   }
-
 
   // and finally sending a log with the visitor's information
   logVisitor(ipInfo);
