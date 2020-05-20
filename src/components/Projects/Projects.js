@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectsCard from './ProjectsCard';
 import TechIcons from './TechIcons';
-import Challenges from './Challenges';
 
 const Projects = (props) => {
   const { backgroundIcons, projectInformation, challenges } = props;
@@ -34,18 +33,6 @@ const Projects = (props) => {
           );
         })}
       </div>
-      {/* <h3 className="challenges__header_primary">Extra Challenges</h3> */}
-      {/* <div className="challenges">
-            {challenges.map(info=>{
-                return(
-                    <Challenges
-                    projectName={info.projectName}
-                    projectDescription={info.projectDescription}
-                    projectImgPath={info.projectImgPath}
-                    />
-                )
-            })}
-            </div> */}
     </section>
   );
 };

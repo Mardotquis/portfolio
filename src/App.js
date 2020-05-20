@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
+import ReactGA from 'react-ga';
 import './App.scss';
 import Header from './components/Header/Header';
 import MainHeader from './components/MainHero/MainHero';
@@ -12,42 +13,35 @@ import {
   challenges,
 } from './assets/json/portfolio';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      backgroundIcons,
-      projectInformation,
-      mainHeroIcons,
-      challenges,
-    };
-  }
+const App = () => {
+  useEffect(() => {
+    // initalizing Google Analytics
+    ReactGA.initialize('UA-166793173-1');
+  }, []);
 
-  scrollIntoThisDiv = (id) => {
+  const scrollIntoThisDiv = (id) => {
     const divToScrollInto = document.getElementById(`${id}`);
     divToScrollInto.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  render() {
-    return (
-      <Fragment>
-        <Header scrollIntoThisDiv={this.scrollIntoThisDiv} />
-        <main>
-          <MainHeader
-            mainHeroIcons={this.state.mainHeroIcons}
-            scrollIntoThisDiv={this.scrollIntoThisDiv}
-          />
-          <Projects
-            backgroundIcons={this.state.backgroundIcons}
-            projectInformation={this.state.projectInformation}
-            challenges={this.state.challenges}
-          />
-          <AboutMe />
-          <Contact />
-        </main>
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      <Header scrollIntoThisDiv={scrollIntoThisDiv} />
+      <main>
+        <MainHeader
+          mainHeroIcons={mainHeroIcons}
+          scrollIntoThisDiv={scrollIntoThisDiv}
+        />
+        <Projects
+          backgroundIcons={backgroundIcons}
+          projectInformation={projectInformation}
+          challenges={challenges}
+        />
+        <AboutMe />
+        <Contact />
+      </main>
+    </Fragment>
+  );
+};
 
 export default App;
