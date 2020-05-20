@@ -17,6 +17,7 @@ const App = () => {
   useEffect(() => {
     // initalizing Google Analytics
     ReactGA.initialize('UA-166793173-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   const scrollIntoThisDiv = (id) => {
