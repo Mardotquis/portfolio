@@ -1,6 +1,5 @@
 import * as Sentry from '@sentry/browser';
 import axios from 'axios';
-import ReactGA from 'react-ga';
 
 function setTags(ipInfo) {
   /**********
@@ -64,8 +63,6 @@ export default async function () {
     console.log('Error with initial load setup.');
   }
 
-  // initalizing Google Analytics
-  ReactGA.initialize('UA-166793173-1');
 
   // and finally sending a log with the visitor's information
   logVisitor(ipInfo);
