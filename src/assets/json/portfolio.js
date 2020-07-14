@@ -5,7 +5,7 @@ const mainHeroIcons = [
   },
   {
     iconPath: '/img/whitelinkedin.svg',
-    iconLink: 'https://www.linkedin.com/in/marquis-mitchell-9aa5b1167/',
+    iconLink: 'https://www.linkedin.com/in/marquis-laron-mitchell',
   },
   {
     iconPath: '/img/whitegithub.svg',
