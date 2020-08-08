@@ -109,7 +109,7 @@ const Contact = () => {
             className="contactInputField"
             placeholder="Message"
           />
-          <input type="submit" className="contactSubmitButton" />
+          <input type="submit" className="contactSubmitButton" value="Submit" />
         </form>
       </div>
       <div>
