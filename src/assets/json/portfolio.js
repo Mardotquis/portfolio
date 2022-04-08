@@ -74,23 +74,15 @@ const projectInformation = [
   {
     projectName: 'Be Well Therapy',
     projectDescription:
-      'Freelance project for a local therapist business. A full stack, server-side rendered application leveraging Next.js + Serverless.',
+      'Freelance project for a local therapist business. A full stack, server-side rendered web application leveraging Next.js + Serverless.',
     projectImgPath: `${CDNLink}/bewelltherapy.png`,
     githubLink: 'https://github.com/Mardotquis/be-well-therapy',
     websiteLink: 'https://bewelltherapy.org',
   },
   {
-    projectName: 'DuragsRUs',
-    projectDescription:
-      'A full stack ecommerce project featuring React, MySQL, and Auth-0.',
-    projectImgPath: `${CDNLink}/ecommerce.png`,
-    githubLink: 'https://github.com/Mardotquis/DuragsRUs',
-    websiteLink: 'https://duragsrus.netlify.com/',
-  },
-  {
     projectName: 'MyMove',
     projectDescription:
-      'Bootcamp midterm project featuring static HTML + CSS. Built using a Sketch file.',
+      'Bootcamp midterm project using static HTML + CSS. Built based on a Sketch file provided.',
     projectImgPath: `${CDNLink}/mymove.png`,
     githubLink: 'https://github.com/Mardotquis/MyMove-Project',
     websiteLink: 'https://mardotquis.github.io/MyMove-Project/',
