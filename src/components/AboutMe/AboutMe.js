@@ -12,26 +12,16 @@ const AboutMe = () => {
             className="rounded_marquis"
           />
           <figcaption className="aboutme__paragraph">
-            Welcome! My name is Marquis Laron Mitchell and I am a young
-            motivated individual who is extremely passionate about technology
-            and innovation. Growing up in Charlotte, N.C., I am a city-boy at
-            heart who fell in love with tech at a very young age. I’ve literally
-            had my career path set on technology since I was about nine years
-            old and always knew that one day I would be working with it, doing
-            something I love! I attended Phillip O. Berry Academy of Technology
-            where I participated in the Engineering Academy and received my NAF
-            diploma along with my high school diploma.{' '}
+            Hi! My name is Marquis and I'm a self-motivated Software Engineer who is extremely passionate about technology and innovation. I have a vast array of knowledge in several programming languages, frameworks, modern web development standards, and engineering best practices.
           </figcaption>
           <p className="aboutme__paragraph bottom">
-            Recently, I participated in the Road to Hire program at Red Ventures
-            that has taught me the basics of web development and helped me jump
-            start my career.{' '}
-            <span className="important-bold">
-              In about five months, I went from zero coding experience to being
-              able to build full-stack web applications using modern
-              technologies.
-            </span>{' '}
-            After Road to Hire, I was blessed with the opportunity to join Red
+            In 2018, I participated in the Road to Hire program at Red Ventures
+            which taught me the basics of web development and helped me jump
+            start my career.
+            Within 6 months I went from very little coding experience to being
+            able to build full-stack web applications using modern
+            technologies by myself.
+            After Road to Hire I was blessed with the opportunity to join Red
             Ventures as a Software Engineer and can't wait to see where my new
             career takes me. Thanks for visiting my portfolio and welcome to my
             journey!
