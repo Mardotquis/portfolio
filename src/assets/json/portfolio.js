@@ -1,15 +1,15 @@
 const mainHeroIcons = [
   {
-    iconPath: '/img/whiteinstagram.svg',
-    iconLink: 'https://www.instagram.com/mar.quis/',
+    iconPath: '/img/whitegithub.svg',
+    iconLink: 'https://www.github.com/mardotquis',
   },
   {
     iconPath: '/img/whitelinkedin.svg',
-    iconLink: 'https://www.linkedin.com/in/marquis-laron-mitchell',
+    iconLink: 'https://www.linkedin.com/in/marquis-l-mitchell/',
   },
   {
-    iconPath: '/img/whitegithub.svg',
-    iconLink: 'https://www.github.com/mardotquis',
+    iconPath: '/img/whiteinstagram.svg',
+    iconLink: 'https://www.instagram.com/mar.quis/',
   },
 ];
 
