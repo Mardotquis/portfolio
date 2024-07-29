@@ -69,7 +69,8 @@ const backgroundIcons = [
   },
 ];
 
-const CDNLink = 'https://d3umk6exgg3emi.cloudfront.net';
+// const CDNLink = 'https://d3umk6exgg3emi.cloudfront.net';
+const CDNLink = '/img';
 const projectInformation = [
   {
     projectName: 'Be Well Therapy',
