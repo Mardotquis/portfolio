@@ -80,19 +80,35 @@ const projectInformation = [
     websiteLink: 'https://bewelltherapy.org',
   },
   {
-    projectName: 'MyMove',
+    projectName: 'World Countries Data',
     projectDescription:
-      'Bootcamp midterm project using static HTML + CSS. Built based on a Sketch file provided.',
-    projectImgPath: `${CDNLink}/mymove.png`,
-    githubLink: 'https://github.com/Mardotquis/MyMove-Project',
-    websiteLink: 'https://mardotquis.github.io/MyMove-Project/',
+      'A project is written in React.js while utilizing Taildwind CSS and Fuse.js under the hood. It helped me practice presenting and searching large collections of data.',
+    projectImgPath: `${CDNLink}/word-countries-data.png`,
+    githubLink: 'https://github.com/Mardotquis/world-countries-data',
+    websiteLink: 'https://incredible-belekoy-5f6927.netlify.app/',
   },
   {
     projectName: 'Guessing Game',
-    projectDescription: 'Fun guessing game built using React!',
+    projectDescription: 'Fun guessing game built using React! 🍪',
     projectImgPath: `${CDNLink}/guessinggame.png`,
     githubLink: 'https://github.com/Mardotquis/guessing_game',
     websiteLink: 'https://mardotquis.github.io/guessing_game/',
+  },
+  {
+    projectName: 'Bot-O-Mat',
+    projectDescription:
+      'Originally an interview project for Red Ventures built using React.js to help practice fundametals and using state inside an app.',
+    projectImgPath: `${CDNLink}/botomat.png`,
+    githubLink: 'https://github.com/Mardotquis/bot-o-mat',
+    websiteLink: 'https://botomat.netlify.app/',
+  },
+  {
+    projectName: 'MyMove',
+    projectDescription:
+      'Road To Hire midterm project using static HTML + CSS. Built based on a Sketch file provided to practice developing based on a mockup.',
+    projectImgPath: `${CDNLink}/mymove.png`,
+    githubLink: 'https://github.com/Mardotquis/MyMove-Project',
+    websiteLink: 'https://mardotquis.github.io/MyMove-Project/',
   },
 ];
 
