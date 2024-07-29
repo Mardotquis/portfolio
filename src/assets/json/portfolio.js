@@ -74,7 +74,7 @@ const projectInformation = [
   {
     projectName: 'Be Well Therapy',
     projectDescription:
-      'Freelance project for a local therapist business. A full stack, server-side rendered web application leveraging Next.js + Serverless.',
+      "Freelance project for a local therapist business. A full stack, server-side rendered web application leveraging Next.js + Serverless. I'm currently the sole maintainer of this website for the therapist business.",
     projectImgPath: `${CDNLink}/bewelltherapy.png`,
     githubLink: 'https://github.com/Mardotquis/be-well-therapy',
     websiteLink: 'https://bewelltherapy.org',
