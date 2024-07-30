@@ -84,7 +84,7 @@ const projectInformation = [
     projectName: 'World Countries Data',
     projectDescription:
       'A project is written in React.js while utilizing Taildwind CSS and Fuse.js under the hood. It helped me practice presenting and searching large collections of data.',
-    projectImgPath: `${CDNLink}/word-countries-data.png`,
+    projectImgPath: `${CDNLink}/world-countries-data.png`,
     githubLink: 'https://github.com/Mardotquis/world-countries-data',
     websiteLink: 'https://incredible-belekoy-5f6927.netlify.app/',
   },
