@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Contact = () => {
+  /* Contact form disabled due to spam
   const submitForm = (e) => {
     e.preventDefault();
     // to prevent spamming of the submit button or multiple submissions
@@ -45,6 +46,7 @@ const Contact = () => {
       message.innerHTML = `There was an error submitting your response. Please try again or <a href="mailto:marquis@hellomarquis.com" class="contact__span-email" target="_blank" rel="noopener noreferrer">email</a> me!`;
     }
   };
+  */
 
   return (
     <section id="contact">
@@ -60,9 +62,10 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             marquis@hellomarquis.com
-          </a>{' '}
-          or fill out this form. I will get back with you as soon as possible!
+          </a>
+          . I will get back with you as soon as possible!
         </p>
+        {/* Contact form disabled due to spam
         <form onSubmit={submitForm} className="contact__form" required>
           <div className="contact__form-names">
             <label htmlFor="firstName">First Name:</label>
@@ -111,10 +114,11 @@ const Contact = () => {
           />
           <input type="submit" className="contactSubmitButton" value="Submit" />
         </form>
+        */}
       </div>
-      <div>
+      {/* <div>
         <h3 className="contact__form_response"></h3>
-      </div>
+      </div> */}
     </section>
   );
 };
